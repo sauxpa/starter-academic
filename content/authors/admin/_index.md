@@ -16,7 +16,7 @@ organizations:
   url: "https://www.cristal.univ-lille.fr/?rubrique9"
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: My research interests include reinforcement learning, in particular stochastic bandits, and application to health.
 
 interests:
 - Stochastic Processes
@@ -73,9 +73,9 @@ highlight_name: false
 
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
-user_groups:
-- Researchers
-- Visitors
+#user_groups:
+#- Researchers
+#- Visitors
 ---
 
 I am a PhD student at Inria Lille under the supervision of [Philippe Preux](https://philippe-preux.github.io/) and [Odalric-Ambrym Maillard](http://odalricambrymmaillard.neowordpress.fr/), funded by the [B4H](https://www.inria.fr/en/philippe-preux-winner-ulne-i-sites-expand-call-projects) project.
