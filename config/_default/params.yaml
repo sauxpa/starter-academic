@@ -141,8 +141,8 @@ search:
     index_name: ''
     show_logo: false
 map:
-  # provider: 'openstreetmap'
-  engine: 2
+  provider: 2
+  # engine: 2
   api_key: ''
   zoom: 12
 marketing:
