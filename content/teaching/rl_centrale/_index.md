@@ -14,4 +14,4 @@ type: page
 
 Optimal control, stochastic and structured bandits, model-based MDP, planning, deep reinforcement learning.
 
-Teachin assistant for practical sessions.
+Teaching assistant for practical sessions.
