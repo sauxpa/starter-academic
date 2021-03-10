@@ -7,4 +7,4 @@ header:
   image: ""
 ---
 
-I teach the following courses:
+Teaching assistant:
