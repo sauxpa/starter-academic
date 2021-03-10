@@ -2,7 +2,7 @@
 # Documentation: https://wowchemy.com/docs/managing-content/
 
 title: "Optimal Transport Correlation"
-summary: ""
+summary: "Geometric study of correlation matrix via Frechet mean."
 authors: [Patrick Saux]
 tags: []
 categories: []
