@@ -1,7 +1,7 @@
 ---
 title: Bandits
 date: '2021-03-20'
-type: book
+type: page
 weight: 20
 ---
 
