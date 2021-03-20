@@ -17,12 +17,12 @@ slides:
 
 ---
 
-## Multi-armed bandits as MDP
+## Multi-armed bandits
 
-* Single state $\mathcal{S}=\{s\}$;
-* $K$ actions;
-* Reward for action $k\in\{1, \dots, K\} is $r(k)\sim\nu_k$;
-  * Expected reward $\mathbb{E}[r(k)] = \mu_k$.
+* $K$ probability measures (**arms**) $\nu_1, \dots, \nu_K$ with mean $\mu_1, \dots, \mu_K$.
+* Policy $\pi_t\in\{1, \dots, K\}$ for $t=1, \dots, T$.
+* If $\pi_t=k$ ($$pulling arm k$$), receive reward $X_{k, t}\sim \nu_k$  
+* Goal: minimise regret to optimal arm in expectation
 
 ---
 
