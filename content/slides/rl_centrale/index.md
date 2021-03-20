@@ -1,10 +1,10 @@
 ---
-title: Slides
-summary: An introduction to using Wowchemy's Slides feature.
+title: Bandits
+summary: A blitz course.
 authors: []
 tags: []
 categories: []
-date: "2019-02-05T00:00:00Z"
+date: "2021-03-20T00:00:00Z"
 slides:
   # Choose a theme from https://github.com/hakimel/reveal.js#theming
   theme: black
@@ -14,8 +14,6 @@ slides:
 ---
 
 # Create slides in Markdown with Wowchemy
-
-[Wowchemy](https://wowchemy.com/) | [Documentation](https://owchemy.com/docs/managing-content/#create-slides)
 
 ---
 
