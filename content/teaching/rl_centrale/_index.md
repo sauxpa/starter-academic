@@ -1,7 +1,7 @@
 ---
 title: Reinforcement Learning (CentraleSupelec 2020-2021)
 linkTitle: Reinforcement Learning (CentraleSupelec 2020-2021)
-summary: .
+summary:
 date: '2021-03-09'
 type: page
 ---
