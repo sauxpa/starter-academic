@@ -13,16 +13,16 @@ slides:
   highlight_style: dracula
 ---
 
-# Create slides in Markdown with Wowchemy
+# Introduction to stochastic and structured bandits
 
 ---
 
-## Features
+## Multi-armed bandits as MDP
 
-- Efficiently write slides in Markdown
-- 3-in-1: Create, Present, and Publish your slides
-- Supports speaker notes
-- Mobile friendly slides
+* Single state $\mathcal{S}=\{s\}$;
+* $K$ actions;
+* Reward for action $k\in\{1, \dots, K\} is $r(k)\sim\nu_k$;
+  * Expected reward $\mathbb{E}[r(k)] = \mu_k$.
 
 ---
 
