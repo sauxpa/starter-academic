@@ -16,4 +16,4 @@ Optimal control, stochastic and structured bandits, model-based MDP, planning, d
 
 Teaching assistant for practical sessions.
 
-{{< list_children >}}
+<!-- {{< list_children >}} -->
