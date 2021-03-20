@@ -2,7 +2,7 @@
 title: Bandits
 date: '2021-03-20'
 summary: Stochastic and structured bandits.
-type: page
+type: book
 weight: 20
 ---
 
