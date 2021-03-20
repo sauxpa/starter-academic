@@ -8,7 +8,7 @@ type: page
 
 {{< figure src="pacman.png" >}}
 
-{{< toc hide_on="xl" >}}
+<!-- {{< toc hide_on="xl" >}} -->
 
 ## Overview
 
@@ -16,4 +16,4 @@ Optimal control, stochastic and structured bandits, model-based MDP, planning, d
 
 Teaching assistant for practical sessions.
 
-<!-- {{< list_children >}} -->
+{{< list_children >}}
