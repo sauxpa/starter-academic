@@ -10,4 +10,4 @@ Introduction to stochastic and structured bandits.
 
 <!--more-->
 
-[Bandits Blitz Course](/slides/rl_centrale/bandits)
+<!-- [Bandits Blitz Course](/slides/rl_centrale/bandits) -->
