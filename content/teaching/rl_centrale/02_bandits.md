@@ -1,5 +1,5 @@
 ---
-title: Bandits
+title: 2. Bandits
 date: '2021-03-20'
 summary: Stochastic and structured bandits.
 type: book

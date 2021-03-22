@@ -1,5 +1,5 @@
 ---
-title: MDP
+title: 1. MDP
 date: '2021-03-20'
 summary: Markov Decision Processes, Bellman operators.
 type: book
