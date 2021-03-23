@@ -10,4 +10,4 @@ Introduction to Markov Decision Processes, Bellman operators and control.
 
 <!--more-->
 
-<!-- [MDP Blitz Course](/slides/rl_centrale/mdp) -->
+[MDP Blitz Course](resources/01_mdp/mdp_cheatsheet.pdf)
