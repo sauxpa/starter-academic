@@ -11,5 +11,7 @@ Introduction to Markov Decision Processes, Bellman operators and control.
 <!--more-->
 
 [MDP Blitz Course](mdp_cheatsheet.pdf)
+
 [Practical session](td1.zip)
+
 [Solution](td1_centrale_correction.pdf)

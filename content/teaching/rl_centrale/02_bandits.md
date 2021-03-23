@@ -11,4 +11,5 @@ Introduction to stochastic and structured bandits.
 <!--more-->
 
 [Bandits Blitz Course](bandit_cheatsheet.pdf)
+
 [Practical session](td2.zip)
