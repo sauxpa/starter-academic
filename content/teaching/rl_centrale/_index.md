@@ -1,6 +1,6 @@
 ---
-title: Reinforcement Learning (CentraleSupelec 2020-2021)
-linkTitle: Reinforcement Learning (CentraleSupelec 2020-2021)
+title: Reinforcement Learning (CentraleSupelec M2 2020-2021)
+linkTitle: Reinforcement Learning (CentraleSupelec M2 2020-2021)
 summary: Introduction to reinforcement learning, control and bandits.
 date: '2021-03-09'
 type: book
