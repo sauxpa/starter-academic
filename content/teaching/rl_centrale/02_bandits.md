@@ -13,3 +13,5 @@ Introduction to stochastic and structured bandits.
 [Bandits Blitz Course](bandit_cheatsheet.pdf)
 
 [Practical session](td2.zip)
+
+[Forban (bandit library)](forban.zip)
