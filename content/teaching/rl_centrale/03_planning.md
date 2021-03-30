@@ -1,7 +1,7 @@
 ---
 title: 3. Planning
 date: '2021-03-30'
-summary: Planning: pure exploration in bandits, best arm identification; Monte Carlo Tree Search.
+summary: Planning, MCTS, best arm identification.
 type: book
 weight: 30
 ---
@@ -11,4 +11,4 @@ Planning in MDP: Monte Carlo Tree Search.
 
 <!--more-->
 
-[Practical session (MCTS on TicTacToe)](tictactoe.zip)
+[Practical session - MCTS on TicTacToe](tictactoe.zip)
