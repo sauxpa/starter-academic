@@ -11,4 +11,7 @@ Planning in MDP: Monte Carlo Tree Search.
 
 <!--more-->
 
+[Practical session - Best arm identification](bai.zip)
+[Forban (bandit library)](../02_bandits/forban.zip)
+
 [Practical session - MCTS on TicTacToe](tictactoe.zip)
