@@ -1,5 +1,5 @@
 ---
-title: Markov Epidemic: a stochastic model for disease outbreak
+title: Markov Epidemic, a stochastic model for disease outbreak
 subtitle:
 
 # Summary for listings and search engines
