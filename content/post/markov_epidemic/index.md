@@ -45,7 +45,6 @@ This article aims to describe a simple model to simulate random disease outbreak
 
 This post is intended to be fairly non-technical. All experiments shown are based on numerical models and do not claim to accurately represent real-life epidemics. All the code (a small Python library and a few notebooks) and more detailed mathematical explanations can be found [HERE](https://github.com/sauxpa/markov_epidemic).
 
-{{< figure src="https://raw.githubusercontent.com/wowchemy/wowchemy-hugo-modules/master/academic.png" title="The template is mobile first with a responsive design to ensure that your site looks stunning on every device." >}}
 
 ## Why stochastic models?
 
@@ -84,7 +83,7 @@ First let us simulate the effect of a severe lockdown in SIR. For that, we compa
 
 In the sparse scenario, a typical outbreak has a long plateau and a slow decrease, but a much smaller peak. In the dense case, almost all the population gets infected at a very early stage, creating a sharp peak, followed by a brutal, but slower decrease. The blue curve below is a typical lockdown strategic goal (flat and slow) while the red curve is more inline with a herd immunity viewpoint.
 
-{{< figure src="https://github.com/sauxpa/markov_epidemic/blob/master/pictures/sir_epidemic.png" >}}
+{{< figure src="sir_epidemic.png" >}}
 
 To be a bit more quantitative about the shape of the curve, one can try to regress a parametric form on it. In all experiments, sparse SIR leads to an approximately normal form while dense SIR is better fitted by a skewed shape such as lognormal. In other words, network sparsification is not *just* about flattening the curve, but also controlling the slope.
 
@@ -99,7 +98,7 @@ In the case of SIS over a preferential attachment network, we compare two outbre
 
 Unless a hub is targeted, the epidemic usually dies fast without reaching highly-connected zones, even with more initial patients.
 
-{{< figure src="https://github.com/sauxpa/markov_epidemic/blob/master/pictures/hub_vs_random.png" >}}
+{{< figure src="hub_vs_random.png" >}}
 
 ### Comparison with deterministic models
 
@@ -107,9 +106,9 @@ As argued above, deterministic models à la Kephart & White can be seen as scali
 
 This is indeed empirically validated, see for example in the case of SIR and SIS below.
 
-{{< figure src="https://github.com/sauxpa/markov_epidemic/blob/master/pictures/sir_deterministic.png" title="SIR" >}}
+{{< figure src="sir_deterministic.png" title="SIR" >}}
 
-{{< figure src="https://github.com/sauxpa/markov_epidemic/blob/master/pictures/sis_deterministic.png" title="SIS" >}}
+{{< figure src="sis_deterministic.png" title="SIS" >}}
 
 ### Comparison with real data (as of April 2020)
 
@@ -119,7 +118,7 @@ To be clear, calibrating the model here means tuning the transition rates for S-
 
 From there, one could investigate different types of representative networks to determine the ones that reproduce the best the observed trends, and use this as a starting point for further predictions (epidemic evolution, impact of lockdown exit...).
 
-{{< figure src="https://github.com/sauxpa/markov_epidemic/blob/master/pictures/seir_france.png" >}}
+{{< figure src="seir_france.png" >}}
 
 ## Going further
 
@@ -133,7 +132,7 @@ A very attractive aspect of stochastic simulation is the ability to perform nume
 
 Also check out this [repo](https://github.com/sauxpa/markov_epidemic) for more implementation details, including a Bokeh app to dynamically play with different network and epidemic parameters.
 
-{{< figure src="https://github.com/sauxpa/markov_epidemic/blob/master/pictures/bokeh_example.png" >}}
+{{< figure src="bokeh_example.png" >}}
 
 Enjoy!
 
