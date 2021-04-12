@@ -31,11 +31,11 @@ image:
 authors:
 - Patrick Saux
 
-<!-- tags: -->
-<!-- - Academic -->
+tags:
+-
 
-<!-- categories: -->
-<!-- - -->
+categories:
+-
 ---
 
 
