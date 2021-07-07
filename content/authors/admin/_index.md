@@ -78,6 +78,6 @@ highlight_name: false
 #- Visitors
 ---
 
-I am a PhD student at Inria Lille under the supervision of [Philippe Preux](https://philippe-preux.github.io/) and [Odalric-Ambrym Maillard](http://odalricambrymmaillard.neowordpress.fr/), funded by the [B4H](https://www.inria.fr/en/philippe-preux-winner-ulne-i-sites-expand-call-projects) project.
+I am a PhD student at Inria Lille (team Scool, formerly SequeL) & CRIStAL (CNRS) under the supervision of [Philippe Preux](https://philippe-preux.github.io/) and [Odalric-Ambrym Maillard](http://odalricambrymmaillard.neowordpress.fr/), funded by the [B4H](https://www.inria.fr/en/philippe-preux-winner-ulne-i-sites-expand-call-projects) project.
 
-My research focuses on reinforcement learning and stochastic bandits in non-stationary environments, with applications to patients follow-up and healthcare planning.
+My research focuses on reinforcement learning and stochastic bandits in non-stationary and risky environments, with applications to patients follow-up and healthcare planning.
