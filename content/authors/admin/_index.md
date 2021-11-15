@@ -22,6 +22,7 @@ interests:
 - Stochastic Processes
 - Reinforcement Learning
 - Stochastic Bandits
+- Nonasymptotic statistics
 - AI for Health
 
 education:
