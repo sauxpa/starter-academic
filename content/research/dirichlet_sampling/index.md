@@ -40,7 +40,7 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'https://hal.archives-ouvertes.fr/hal-03421252/document'
+url_pdf: 'https://papers.nips.cc/paper/2021/file/75429d136f65d2d6168b9b6c5f6ec951-Paper.pdf'
 url_code: 'https://github.com/DBaudry/Dirichlet_Sampling_for_Bandits_Neurips21'
 url_dataset: ''
 url_poster: ''
