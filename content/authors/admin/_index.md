@@ -54,9 +54,9 @@ social:
 - icon: linkedin
   icon_pack: fab
   link: 'https://linkedin.com/in/patrick-saux-806279a7'
-#- icon: google-scholar
-#  icon_pack: ai
-#  link: https://scholar.google.co.uk
+- icon: google-scholar
+  icon_pack: ai
+  link: https://scholar.google.com/citations?user=F6-WgoUAAAAJ
 - icon: github
   icon_pack: fab
   link: https://github.com/sauxpa
