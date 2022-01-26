@@ -19,6 +19,17 @@ date_format = "Jan 2006"
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 [[experience]]
   title = "Teaching Assistant"
+  company = "Ecole Polytechnique"
+  company_url = "https://programmes.polytechnique.edu/en/master/all-msct-programs/artificial-intelligence-advanced-visual-computing-master"
+  location = "Palaiseau"
+  date_start = "2022-01-26"
+  date_end = "2022-02-09"
+  description = """
+  Reinforcement learning class.
+  """
+
+[[experience]]
+  title = "Teaching Assistant"
   company = "Centrale Supelec"
   company_url = "https://www.centralesupelec.fr/"
   location = "Gif-sur-Yvette"
