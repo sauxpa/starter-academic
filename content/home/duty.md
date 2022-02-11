@@ -18,7 +18,7 @@ subtitle = ""
   icon = "book-dead"
   icon_pack = "fas"
   name = "Conference Reviewer"
-  description = "AISTATS 2022"  
+  description = "AISTATS 2022 (nominated among top reviewers)"  
 
 # Uncomment to use emoji icons.
 # [[feature]]
