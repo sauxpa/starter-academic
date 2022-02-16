@@ -10,4 +10,4 @@ Policy gradient, Reinforce, PPO, Unity.
 
 <!--more-->
 
-[Practical session](model_based.zip)
+[Practical session](policy_gradient.zip)
