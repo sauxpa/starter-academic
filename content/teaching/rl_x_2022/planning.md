@@ -14,3 +14,8 @@ Planning in MDP: Monte Carlo Tree Search.
 [Practical session - Best arm identification](bai.zip)
 
 [Practical session - MCTS on TicTacToe](tictactoe.zip)
+
+
+[Answers - Best arm identification](bai_answers.zip)
+
+[Answers - MCTS on TicTacToe](tictactoe_answers.zip)
