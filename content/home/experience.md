@@ -23,9 +23,9 @@ date_format = "Jan 2006"
   company_url = "https://programmes.polytechnique.edu/en/master/all-msct-programs/artificial-intelligence-advanced-visual-computing-master"
   location = "Palaiseau"
   date_start = "2022-01-26"
-  date_end = "2022-02-09"
+  date_end = "2022-03-09"
   description = """
-  Reinforcement learning class.
+  Reinforcement learning class (MAP/INF641).
   """
 
 [[experience]]
