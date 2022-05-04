@@ -1,5 +1,5 @@
 ---
-title: Scool Seminar, From Optimality to Robustness: Dirichlet Sampling Strategies in Stochastic Bandits
+title: Scool Seminar, "From Optimality to Robustness: Dirichlet Sampling Strategies in Stochastic Bandits"
 
 event: Wowchemy Conference
 event_url: https://example.org
