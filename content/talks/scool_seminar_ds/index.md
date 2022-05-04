@@ -12,7 +12,7 @@ location: Inria Scool
 #  postcode: '94305'
 #  country: United States
 
-summary: From Optimality to Robustness: Dirichlet Sampling Strategies in Stochastic Bandits.
+summary: 'From Optimality to Robustness: Dirichlet Sampling Strategies in Stochastic Bandits.'
 abstract: ""
 
 # Talk start and end times.
