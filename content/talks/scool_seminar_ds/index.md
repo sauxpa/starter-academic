@@ -17,12 +17,12 @@ abstract: "The stochastic multi-arm bandit problem has been extensively studied 
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: "2021-26-11T11:00:00Z"
+date: "2021-11-26T11:00:00Z"
 date_end: ""
 all_day: false
 
 # Schedule page publish date (NOT talk date).
-publishDate: "2021-26-11T13:00:00Z"
+publishDate: "2021-11-26T13:00:00Z"
 
 show_date: true
 

@@ -37,12 +37,12 @@ by patients and practitioners and optimize BS outcome."
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: "2022-06-05T17:00:00Z"
+date: "2022-05-06T17:00:00Z"
 date_end: ""
 all_day: false
 
 # Schedule page publish date (NOT talk date).
-publishDate: "2022-04-05T17:00:00Z"
+publishDate: "2022-05-04T17:00:00Z"
 
 show_date: true
 
