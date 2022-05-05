@@ -24,11 +24,11 @@ all_day: false
 # Schedule page publish date (NOT talk date).
 publishDate: "2022-06-05T17:00:00Z"
 
-authors: [Patrick Saux]
+authors: []
 tags: []
 
 # Is this a featured talk? (true/false)
-featured: true
+featured: false
 
 #image:
 #  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/bzdhc5b3Bxs)'

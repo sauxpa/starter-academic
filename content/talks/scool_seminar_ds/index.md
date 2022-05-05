@@ -24,7 +24,7 @@ all_day: false
 # Schedule page publish date (NOT talk date).
 publishDate: "2021-26-11T13:00:00Z"
 
-authors: [Patrick Saux]
+authors: []
 tags: []
 
 # Is this a featured talk? (true/false)
