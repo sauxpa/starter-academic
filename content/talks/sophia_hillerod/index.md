@@ -1,5 +1,5 @@
 ---
-title: '29 April 2022: General Assembly SOPHIA'
+title: '2022/04/29: General Assembly SOPHIA'
 
 #event: Wowchemy Conference
 #event_url: https://example.org
