@@ -1,16 +1,16 @@
 ---
-title: 'IFSO-EC Congress on Obesity'
+title: '6 May 2022: IFSO-EC Congress on Obesity'
 
 #event: Wowchemy Conference
 #event_url: https://example.org
 
 location: Maastricht
-#address:
-#  street: 450 Serra Mall
-#  city: Stanford
-#  region: CA
-#  postcode: '94305'
-#  country: United States
+address:
+  street:
+  city:
+  region:
+  postcode:
+  country:
 
 summary: 'Easy to use and interpretable model based on artificial intelligence for predicting 5-year weight trajectories after bariatric surgery.'
 abstract: "Weight loss (WL) after bariatric surgery (BS) varies with time, across patients and interventions. Realistic expectations of long term WL are crucial to inform clinical decisions by patients

@@ -1,5 +1,5 @@
 ---
-title: 'Scool Seminar'
+title: '26 November 2021: Scool Seminar'
 
 #event: Wowchemy Conference
 #event_url: https://example.org
