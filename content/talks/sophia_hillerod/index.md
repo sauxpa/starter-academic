@@ -1,10 +1,10 @@
 ---
-title: 'Scool Seminar'
+title: 'General Assembly SOPHIA'
 
 #event: Wowchemy Conference
 #event_url: https://example.org
 
-location: Inria Scool
+location: Novonordisk, Hillerod
 #address:
 #  street: 450 Serra Mall
 #  city: Stanford
@@ -12,17 +12,17 @@ location: Inria Scool
 #  postcode: '94305'
 #  country: United States
 
-summary: 'From Optimality to Robustness: Dirichlet Sampling Strategies in Stochastic Bandits.'
+summary: 'Weight trajectory after bariatric surgery.'
 abstract: ""
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: "2021-26-11T11:00:00Z"
+date: "2022-29-04T10:00:00Z"
 # date_end: "2030-06-01T15:00:00Z"
 all_day: false
 
 # Schedule page publish date (NOT talk date).
-publishDate: "2021-26-11T13:00:00Z"
+publishDate: "2022-29-04T10:00:00Z"
 
 authors: [Patrick Saux]
 tags: []

@@ -1,10 +1,10 @@
 ---
-title: 'Scool Seminar'
+title: 'IFSO-EC Congress on Obesity'
 
 #event: Wowchemy Conference
 #event_url: https://example.org
 
-location: Inria Scool
+location: Maastricht
 #address:
 #  street: 450 Serra Mall
 #  city: Stanford
@@ -12,23 +12,23 @@ location: Inria Scool
 #  postcode: '94305'
 #  country: United States
 
-summary: 'From Optimality to Robustness: Dirichlet Sampling Strategies in Stochastic Bandits.'
+summary: 'Easy to use and interpretable model based on artificial intelligence for predicting 5-year weight trajectories after bariatric surgery.'
 abstract: ""
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: "2021-26-11T11:00:00Z"
+date: "2022-06-05T17:00:00Z"
 # date_end: "2030-06-01T15:00:00Z"
 all_day: false
 
 # Schedule page publish date (NOT talk date).
-publishDate: "2021-26-11T13:00:00Z"
+publishDate: "2022-06-05T17:00:00Z"
 
 authors: [Patrick Saux]
 tags: []
 
 # Is this a featured talk? (true/false)
-featured: false
+featured: true
 
 #image:
 #  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/bzdhc5b3Bxs)'
