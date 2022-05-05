@@ -1,5 +1,5 @@
 ---
-title: '2022/05/06: IFSO-EC Congress on Obesity'
+title: '6 May 2022: IFSO-EC Congress on Obesity'
 
 #event: Wowchemy Conference
 #event_url: https://example.org
