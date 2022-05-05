@@ -18,7 +18,7 @@ abstract: "The stochastic multi-arm bandit problem has been extensively studied 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
 date: "2021-26-11T11:00:00Z"
-# date_end: "2030-06-01T15:00:00Z"
+date_end: ""
 all_day: false
 
 # Schedule page publish date (NOT talk date).

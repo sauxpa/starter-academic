@@ -18,7 +18,7 @@ abstract: "Weight loss after bariatric surgery varies with time, across patients
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
 date: "2022-29-04T10:00:00Z"
-# date_end: "2030-06-01T15:00:00Z"
+date_end: ""
 all_day: false
 
 # Schedule page publish date (NOT talk date).
