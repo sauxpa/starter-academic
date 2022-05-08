@@ -16,7 +16,7 @@ organizations:
   url: "https://www.cristal.univ-lille.fr/?rubrique9"
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include reinforcement learning, in particular stochastic bandits, and application to health.
+bio: My research interests include reinforcement learning, in particular stochastic bandits, and applications to health.
 
 interests:
 - Stochastic Processes
@@ -24,6 +24,7 @@ interests:
 - Stochastic Bandits
 - Nonasymptotic statistics
 - AI for Health
+- Obesity and Bariatric Surgery
 
 education:
   courses:
@@ -81,4 +82,4 @@ highlight_name: false
 
 I am a PhD student at Inria Lille (team Scool, formerly SequeL) & CRIStAL (CNRS) under the supervision of [Philippe Preux](https://philippe-preux.github.io/) and [Odalric-Ambrym Maillard](http://odalricambrymmaillard.neowordpress.fr/), funded by the [B4H](https://www.inria.fr/en/philippe-preux-winner-ulne-i-sites-expand-call-projects) project.
 
-My research focuses on reinforcement learning and stochastic bandits in non-stationary and risky environments, with applications to patients follow-up and healthcare planning.
+My research focuses on reinforcement learning and stochastic bandits in risky, nonparametric environments. I am also working with François Pattou (PU-PH at CHU Lille and Inserm) and his team to design personalised, data-driven follow-up programmes after bariatric surgery for patients with obesity.
