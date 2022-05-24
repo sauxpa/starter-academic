@@ -61,10 +61,14 @@ featured: false
 #  icon_pack: fab
 #  name: Follow
 #  url: https://twitter.com/georgecushen
-#url_code: ""
-#url_pdf: ""
-#url_slides: ""
-#url_video: ""
+url_pdf: ''
+url_code: ''
+url_dataset: ''
+url_poster: ''
+url_project: ''
+url_slides: 'https://sauxpa.github.io/talks/ifso_2022/slides.pdf'
+url_source: ''
+url_video: ''
 
 # Markdown Slides (optional).
 #   Associate this talk with Markdown slides.
