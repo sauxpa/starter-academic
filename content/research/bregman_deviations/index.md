@@ -1,34 +1,46 @@
 ---
-title: "From Optimality to Robustness: Dirichlet Sampling Strategies in Stochastic Bandits"
+title: "Bregman Deviations of Generic Exponential Families"
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
-- Dorian Baudry
 - Patrick Saux
+- Sayak Ray Chowdhury
 - Odalric-Ambrym Maillard
+- Aditya Gopalan
 
-date: "2021-15-11T00:00:00Z"
+date: "2022-26-11T00:00:00Z"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2021-15-11T00:00:00Z"
+publishDate: "2022-19-05T00:00:00Z"
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["1"]
+publication_types: ["3"]
 
 # Publication name and optional abbreviated publication name.
-publication: In *35th Conference on Neural Information Processing Systems (NeurIPS 2021)*
-publication_short: In *NeurIPS 2021*
+publication:
+publication_short:
 
 abstract:
 
 # Summary. An optional shortened abstract.
-summary: The stochastic multi-arm bandit problem has been extensively studied under standard assumptions on the arm's distribution (e.g bounded with known support, exponential family, etc). These assumptions are suitable for many real-world problems but sometimes they require knowledge (on tails for instance) that may not be precisely accessible to the practitioner, raising the question of the robustness of bandit algorithms to model misspecification. In this paper we study a generic Dirichlet Sampling (DS) algorithm, based on pairwise comparisons of empirical indices computed with re-sampling of the arms' observations and a data-dependent exploration bonus. We show that different variants of this strategy achieve provably optimal regret guarantees when the distributions are bounded and logarithmic regret for semi-bounded distributions with a mild quantile condition. We also show that a simple tuning achieve robustness with respect to a large class of unbounded distributions, at the cost of slightly worse than logarithmic asymptotic regret. We finally provide numerical experiments showing the merits of DS in a decision-making problem on synthetic agriculture data.
+summary: We revisit the method of mixture technique, also known as the Laplace method, to study the concen-
+tration phenomenon in generic exponential families. Combining the properties of Bregman divergence
+associated with log-partition function of the family with the method of mixtures for super-martingales,
+we establish a generic bound controlling the Bregman divergence between the parameter of the family
+and a finite sample estimate of the parameter. Our bound is time-uniform and makes appear a quantity
+extending the classical information gain to exponential families, which we call the Bregman information
+gain. For the practitioner, we instantiate this novel bound to several classical families, e.g., Gaussian,
+Bernoulli, Exponential, Weibull, Pareto, Poisson and Chi-square yielding explicit forms of the confidence
+sets and the Bregman information gain. We further numerically compare the resulting confidence bounds
+to state-of-the-art alternatives for time-uniform concentration and show that this novel method yields
+competitive results. Finally, we highlight the benefit of our concentration bounds on some illustrative
+applications.
 
 tags: []
 
@@ -40,10 +52,10 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'https://papers.nips.cc/paper/2021/file/75429d136f65d2d6168b9b6c5f6ec951-Paper.pdf'
-url_code: 'https://github.com/DBaudry/Dirichlet_Sampling_for_Bandits_Neurips21'
+url_pdf: 'https://arxiv.org/pdf/2201.07306.pdf'
+url_code: ''
 url_dataset: ''
-url_poster: 'https://sauxpa.github.io/research/dirichlet_sampling/poster.pdf'
+url_poster: 'https://sauxpa.github.io/research/bregman_deviations/poster.pdf'
 url_project: ''
 url_slides: ''
 url_source: ''
