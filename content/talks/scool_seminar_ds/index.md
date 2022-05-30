@@ -1,5 +1,5 @@
 ---
-title: '26 November 2021: Scool Seminar'
+title: '26 November 2021: Scool Seminar, Inria Lille, FR'
 
 #event: Wowchemy Conference
 #event_url: https://example.org

@@ -1,5 +1,5 @@
 ---
-title: '1 June 2022: Safe, Anytime-Valid Inference and Game-theoretic Statistics'
+title: '1 June 2022: Safe, Anytime-Valid Inference and Game-theoretic Statistics, TU Eindhoven, NL'
 
 #event: Wowchemy Conference
 #event_url: https://example.org
