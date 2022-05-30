@@ -1,10 +1,10 @@
 ---
-title: '29 April 2022: General Assembly SOPHIA, Hiller\od, DK'
+title: '29 April 2022: General Assembly SOPHIA, Hillerod, DK'
 
 #event: Wowchemy Conference
 #event_url: https://example.org
 
-location: Novonordisk, Hiller\od
+location: Novonordisk, Hillerod
 #address:
 #  street: 450 Serra Mall
 #  city: Stanford
