@@ -1,5 +1,5 @@
 ---
-title: '19 May 2022: PhD Day at Department of Mathematics, Universit\'e de Lille, FR'
+title: '19 May 2022: PhD Day at Department of Mathematics, U Lille, FR'
 
 #event: Wowchemy Conference
 #event_url: https://example.org
