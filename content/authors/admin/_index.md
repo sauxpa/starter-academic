@@ -28,7 +28,7 @@ interests:
 
 education:
   courses:
-  - course: PhD in Computer Science
+  - course: PhD in Mathematics/Computer Science
     institution: Université de Lille and Inria Scool
     year: expected 2023
   - course: MSc in Machine Learning (MVA)
