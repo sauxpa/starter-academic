@@ -47,7 +47,7 @@ url_code: ''
 url_dataset: ''
 url_poster: 'https://sauxpa.github.io/research/bregman_deviations/poster.pdf'
 url_project: ''
-url_slides: ''
+url_slides: 'https://sauxpa.github.io/talks/savi_workshop_2022/slides.pdf'
 url_source: ''
 url_video: ''
 
