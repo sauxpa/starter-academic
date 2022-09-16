@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Weight Trajectory Online Calculator"
+title: "Bariatric Weight Trajectory Prediction"
 summary: "An online prediction tool for weight loss trajectory after bariatric surgery."
 authors: [Patrick Saux et al.]
 tags: []
@@ -9,7 +9,7 @@ categories: []
 date: 2022-05-08T14:47:06+01:00
 
 # Optional external URL for project (replaces project detail page).
-external_link: "https://weight-trajectory-prediction-test.univ-lille.fr/"
+external_link: "https://bariatric-weight-trajectory-prediction.univ-lille.fr/"
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
