@@ -66,7 +66,7 @@ url_code: ''
 url_dataset: ''
 url_poster: ''
 url_project: ''
-url_slides: 'https://sauxpa.github.io/talks/ifso_2022/slides.pdf'
+url_slides: 'https://sauxpa.github.io/talks/ifso_2022/ifso_2022.pptx'
 url_source: ''
 url_video: ''
 
