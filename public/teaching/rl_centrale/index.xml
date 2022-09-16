@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reinforcement Learning (CentraleSupelec M2 2020-2021) | Patrick Saux</title>
+    <link>https://sauxpa.github.io/teaching/rl_centrale/</link>
+      <atom:link href="https://sauxpa.github.io/teaching/rl_centrale/index.xml" rel="self" type="application/rss+xml" />
+    <description>Reinforcement Learning (CentraleSupelec M2 2020-2021)</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-uk</language><lastBuildDate>Tue, 09 Mar 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://sauxpa.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Reinforcement Learning (CentraleSupelec M2 2020-2021)</title>
+      <link>https://sauxpa.github.io/teaching/rl_centrale/</link>
+    </image>
+    
+    <item>
+      <title>1. MDP</title>
+      <link>https://sauxpa.github.io/teaching/rl_centrale/01_mdp/</link>
+      <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>https://sauxpa.github.io/teaching/rl_centrale/01_mdp/</guid>
+      <description>&lt;p&gt;Introduction to Markov Decision Processes, Bellman operators and control.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;mdp_cheatsheet.pdf&#34;&gt;MDP Blitz Course&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;td1.zip&#34;&gt;Practical session&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;td1_centrale_correction.pdf&#34;&gt;Solution&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>2. Bandits</title>
+      <link>https://sauxpa.github.io/teaching/rl_centrale/02_bandits/</link>
+      <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>https://sauxpa.github.io/teaching/rl_centrale/02_bandits/</guid>
+      <description>&lt;p&gt;Introduction to stochastic and structured bandits.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;bandit_cheatsheet.pdf&#34;&gt;Bandits Blitz Course&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;td2.zip&#34;&gt;Practical session&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;forban.zip&#34;&gt;Forban (bandit library)&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>3. Planning</title>
+      <link>https://sauxpa.github.io/teaching/rl_centrale/03_planning/</link>
+      <pubDate>Tue, 30 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>https://sauxpa.github.io/teaching/rl_centrale/03_planning/</guid>
+      <description>&lt;p&gt;Planning in bandits: pure exploration, best arm identification.
+Planning in MDP: Monte Carlo Tree Search.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;bai.zip&#34;&gt;Practical session - Best arm identification&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;../02_bandits/forban.zip&#34;&gt;Forban (bandit library)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;tictactoe.zip&#34;&gt;Practical session - MCTS on TicTacToe&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>4. Deep Reinforcement Learning</title>
+      <link>https://sauxpa.github.io/teaching/rl_centrale/04_drl/</link>
+      <pubDate>Mon, 05 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://sauxpa.github.io/teaching/rl_centrale/04_drl/</guid>
+      <description>&lt;p&gt;Deep RL, DQN.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;dqn_cheatsheet.pdf&#34;&gt;DQN Blitz Course&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;dqn.zip&#34;&gt;Practical session - DQN&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
