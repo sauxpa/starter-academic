@@ -73,8 +73,8 @@ The reader versed in martingales will almost surely recognise this problem as an
 
 For convenience, we consider the continuous time setting, i.e. $t\in\mathbb{R}_+$ instead of $t\in\mathbb{N}$ and define the process $Z$ as
 \begin{align*}
-&dZ_t = \mu dt + \sigma dW_t\\,,\\\
-&Z_0=0\\,,\\
+&dZ_t = \mu dt + \sigma dW_t\\,,\\\\
+&Z_0=0\\,,
 \end{align*}
 where $\mu=0.63$, $\sigma=20.67$ and $W$ is a standard Brownian motion with respect to the filtration $\mathcal{F}$. Intuitively, we retrieve the discrete time model by the correspondence $dt\approx 1$ and $dW_t \approx \xi_t$. The loss process $Z$ can be more directly expressed as
 $$
