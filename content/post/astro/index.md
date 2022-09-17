@@ -1,3 +1,7 @@
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
 ---
 title: Gambler's ruin in Astro and the accuracy of Gaussian approximation
 subtitle:
@@ -37,7 +41,7 @@ tags:
 categories:
 -
 ---
-Recently, I was on a holiday trip with a friend, let's call him Nathan. While not exactly a gambling addict, Nathan likes to buy scratchcards every now and then. One of his favorite is called Astro; most newspapers shops in France sell them for €2 a piece, and there exists 12 different version, one for each astrological sign. While the sign itself does not modify the odds (at least I don't believe so), it is a brilliant marketing strategy as it encourages you to buy a few more tickets and distribute them to your friends born under a different star than yours. Nathan is a Sagittarius, and that day he acquired a set of tickets, including an extra Aquarius one that he gifted to me. As it turned out, all but one of the set were loosers, the Aquarius one being the sole winner of a modest €6. Emboldened by this unexpected luck, I exchanged my gains for three more tickets to distribute among friends, keeping one Aquarius for myself. Again, all loosers but mine. This time I cashed out and stopped the gambling streak, much to Nathan's dismay. I admit this is not a particularly exciting vacation story, but it got me thinking: what if I did not cashed out? How long could I have last by just reinvesting my gains, flying off Nathan's initial €2 ticket?  
+Recently, I was on a holiday trip with a friend, let's call him Nathan. While not exactly a gambling addict, Nathan likes to buy scratchcards every now and then. One of his favourites is called Astro; most newspapers shops in France sell them for €2 a piece, and there exists 12 different versions, one for each astrological sign. While the sign itself does not affect the odds (at least I don't believe so), it is a brilliant marketing strategy as it encourages you to buy a few more tickets and distribute them to your friends born under a different star than yours. Nathan is a Sagittarius, and that day he acquired a set of tickets, including an extra Aquarius one that he gifted to me. As it turned out, all but one of the set were loosers, the Aquarius one being the sole winner of a modest €6. Emboldened by this unexpected luck, I exchanged my gains for three more tickets to distribute among friends, keeping one Aquarius for myself. Again, all loosers but mine. This time I cashed out and stopped the gambling streak, much to Nathan's dismay. I admit this is not a particularly exciting vacation story, but it got me thinking: what if I did not cashed out? How long could I have last by just reinvesting my gains, flying off Nathan's initial €2 ticket?  
 
 
 ## The Astro distribution
