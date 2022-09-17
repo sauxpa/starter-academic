@@ -53,7 +53,7 @@ In addition, we can also compute the variance with the formula $\sigma^2 = \math
 ## Flight time
 
 
-Going back to our initial question: how long can we defy the odds and keep "flying" from only the initial investment of €2? Let's introduce some notations. We denote by $\left(g_t\right)_{t\in\mathbb{N}}$ a sequence of i.i.d samples drawn from the Astro distribution and let $\xi_t = 2 - g_t$ be the corresponding net *loss*, including the ticket price, and
+Going back to our initial question: how long can we defy the odds and keep "flying" from only the initial investment of €2? Let's introduce some notations. We denote by $\left( g_t \right)\_{t\in\mathbb{N}}$ a sequence of i.i.d samples drawn from the Astro distribution and let $\xi_t = 2 - g_t$ be the corresponding net *loss*, including the ticket price, and
 $$
 X_t = \sum_{s=1}^t \xi_s
 $$
