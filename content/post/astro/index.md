@@ -1,7 +1,3 @@
-<script type="text/javascript"
-  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-
 ---
 title: Gambler's ruin in Astro and the accuracy of Gaussian approximation
 subtitle:
