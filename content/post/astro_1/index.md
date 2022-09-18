@@ -87,7 +87,7 @@ and the flight time in this context naturally becomes $\tau_{\alpha} = \inf \lef
 
 Studying a stopping time can be quite hard, and coupling it with the right martingale is often the easiest approach. We recall here some basics results on the interplay between martingales and stopping times. For convenience, we denote by $\mathcal{T}$ either $\mathbb{N}$ or $\mathbb{R}_+$ (the elementary results presented here are essentially unchanged by moving to the continuous time setting).
 
-First, a process $\left(M_t\right)_{t\in\mathcal{T}}$ is a martingale with respect to a filtration $\left(\mathcal{F}_t\right)_{t\in\mathcal{T}}$ if for all $t\in\mathcal{T}$, $M_t$ is $\mathcal{F}_t$-adapted, integrable and satisfies the equality
+First, a process $\left(M_t\right)_{t\in\mathcal{T}}$ is a martingale with respect to a filtration $\left(\mathcal{F}_t\right)\_{t\in\mathcal{T}}$ if for all $t\in\mathcal{T}$, $M_t$ is $\mathcal{F}_t$-adapted, integrable and satisfies the equality
 $$
 \forall s\in\mathcal{T},\ \mathbb{E}\left[M_{t+s}\mid \mathcal{F}_t\right] = M_t\\,.
 $$
@@ -109,7 +109,7 @@ M^\lambda_t = \exp\left( \lambda W_t - \frac{\lambda^2}{2}t\right)\\,.
 $$
 It is a standard result in stochastic calculus that $M^\lambda$ defines a $\mathcal{F}$-martingale (it follows from the expression of the moment generating function on the standard Gaussian distribution coupled with the fact that the law of $W_t$ is $\mathcal{N}\left(0, t\right)$). Moreover, it can be rewritten as $M^\lambda_t = \exp\left( \frac{\lambda}{\sigma} Z_t - (\frac{\lambda^2}{2} + \frac{\lambda \mu}{\sigma})t\right)$. The reason why this is the "right" martingale will become apparent soon: it will help us compute exponential moments of $\tau_{\alpha}$, also known as the Laplace transform, which fully characterises its distribution.
 
-Note that $t\mapsto X_t$ is (almost-surely) continuous (since $t\mapsto W_t$ is), and therefore $Z_{\tau_{\alpha}}=\alpha$ on the event $\left\lbrace \tau_{\alpha} < \infty\right\rbrace$. As a consequence, it is straightforward to control $M^{\lambda}_{t\wedge \tau_{\alpha}}$ in the following way:
+Note that $t\mapsto Z_t$ is (almost-surely) continuous (since $t\mapsto W_t$ is), and therefore $Z_{\tau_{\alpha}}=\alpha$ on the event $\left\lbrace \tau_{\alpha} < \infty\right\rbrace$. As a consequence, it is straightforward to control $M^{\lambda}_{t\wedge \tau_{\alpha}}$ in the following way:
 $$
 \lvert M^\lambda_{t\wedge \tau_{\alpha}} \rvert \leq e^{\frac{\lambda}{\sigma} \max(Z_{t\wedge \tau_{\alpha}}, 0) } \leq e^{\frac{\lambda \alpha}{\sigma}}\\,,
 $$
@@ -135,7 +135,7 @@ After all these calculations, let's take a step back to reflect on what this res
 
 ### Nice! Does this mean that I can play thrice at the cost of a single ticket most of the time?
 
-Not at all! It is important to make the distinction here between *mean* and *median* flight times. Intuitively, the distribution of flight time $\tau_{\alpha}$ should be quite asymmetrical around its mean: events where large gains are made early (e.g. first ticket yields €100) will result in very large flight times but remain quite rare, while events of "early crashes" (the few tickets are loosers) are much more frequent. Therefore, the median flight time, i.e. the majority of flight times are below it, should be less than the mean flight time, which is driven upwards by the "early luck" outliers. This type of distribution is called *right-skewed*.
+Not at all! It is important to make the distinction here between *mean* and *median* flight times. Intuitively, the distribution of flight time $\tau_{\alpha}$ should be quite asymmetrical around its mean: events where large gains are made early (e.g. first ticket yields €100) will result in very large flight times but remain quite rare, while events of "early crashes" (the first few tickets are loosers) are much more frequent. Therefore, the median flight time, i.e. the majority of flight times are below it, should be less than the mean flight time, which is driven upwards by the "early luck" outliers. This type of distribution is called *right-skewed*.
 
 ### Flight time distribution in the Gaussian case
 
