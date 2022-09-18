@@ -65,7 +65,7 @@ Our problem of "flight time" corresponds to studying the following random time:
 $$
 \tau_{\alpha} = \inf \left\lbrace t\in\mathbb{N}, X_t \geq \alpha \right\rbrace,
 $$
-which is a stopping time with respect to the natural filtration $\left(\mathcal{F}_t\right)_{t\in\mathbb{N}}$ induced by the process $X$, i.e. $\mathcal{F}_t=\sigma\left( X_s, 0\leq s\leq t\right)$. Indeed, reaching the threshold $\alpha=2$ for the cumulative loss $X_t$ is equivalent to reaching €0 wealth for a gambler who starts at €2 and keeps scratching Astro at every round, which we informally defined as the "flight time" above.
+which is a stopping time with respect to the natural filtration $\left(\mathcal{F}_t\right)_{t\in\mathbb{N}}$ induced by the process $X$, i.e. $\mathcal{F}_t=\sigma\left( X_s, 0\leq s\leq t\right)$ (this means $\left\lbrace \tau_{\alpha} \geq t\right\rbrace$ is an event in $\mathcal{F}_t$ for all $t\in\mathbb{N}$, i.e. one knows from the information available at time $t$ whether or not the stopping event occured or not). Indeed, reaching the threshold $\alpha=2$ for the cumulative loss $X_t$ is equivalent to reaching €0 wealth for a gambler who starts at €2 and keeps scratching Astro at every round, which we informally defined as the "flight time" above.
 
 ## The Gaussian case
 
@@ -82,19 +82,42 @@ Z_t = \mu t + \sigma W_t\\,,
 $$
 and the flight time in this context naturally becomes $\tau_{\alpha} = \inf \left\lbrace t\in\mathbb{N}, Z_t \geq \alpha \right\rbrace$.
 
-Studying a stopping time can be quite hard, and coupling it with the right martingale is often the easiest approach. For $\lambda\in\mathbb{R}$, we define
+
+### Of martingales and stopping times
+
+Studying a stopping time can be quite hard, and coupling it with the right martingale is often the easiest approach. We recall here some basics results on the interplay between martingales and stopping times. For convenience, we denote by $\mathcal{T}$ either $\mathbb{N}$ or $\mathbb{R}_+$ (the elementary results presented here are essentially unchanged by moving to the continuous time setting).
+
+First, a process $\left(M_t\right)_{t\in\mathcal{T}}$ is a martingale with respect to a filtration $\left(\mathcal{F}_t\right)_{t\in\mathcal{T}}$ if for all $t\in\mathcal{T}$, $M_t$ is $\mathcal{F}_t$-adapted, integrable and satisfies the equality
+$$
+\forall s\in\mathcal{T},\ \mathbb{E}\left[M_{t+s}\mid \mathcal{F}_t\right] = M_t\\,.
+$$
+
+Intuitively, this means a martingale represents a *fair* game: it uses only information available at time $t$ ($\mathcal{F}_t$-adapted), and given this information, the estimation of future values of $M$ is exactly the current known value $M_t$ (this property is sometimes referred to as martingales being "constant in expectation").
+
+The crucial property of martingales for the study of stopping times is called Doob's optional stopping theorem: for any $\mathcal{F}$-stopping time, the *stopped* process $\left(M_{t\wedge \tau}\right)_{t\in\mathcal{T}}$ is also a $\mathcal{F}$-martingale, where $t\wedge \tau$ represents the minimum between $t$ and $\tau$. By taking the expectation of the above equality applied to the stopped martingale, we obtain the following identity:
+$$
+\forall t\in\mathcal{T},\ \mathbb{E}\left[M_{t\wedge \tau}\right] = \mathbb{E}\left[M_0\right]\\,.
+$$
+
+Ideally, we would like to have the simpler equality $\mathbb{E}\left[M_{\tau}\right] = \mathbb{E}\left[M_0\right]$ instead, which depending on the exact expression of $M$ can reveal key properties of $\tau$ (expectation or higher moments, density function...). It is therefore tempting to take the limit $t\rightarrow +\infty$ in the above and hope that one can swap limit and expectation. This holds under a variety of technical assumptions. A simple argument, which is enough for our purpose, is to use the dominated convergence theorem, provided $M_{t\wedge \tau}$ can be bounded by an integrable random variable independent of $t$.
+
+### Building the right martingale
+
+For $\lambda\in\mathbb{R}$, we define
 $$
 M^\lambda_t = \exp\left( \lambda W_t - \frac{\lambda^2}{2}t\right)\\,.
 $$
-It is a standard result that $M^\lambda$ defines a $\mathcal{F}$-martingale. Moreover, it can be rewritten as $M^\lambda_t = \exp\left( \frac{\lambda}{\sigma} Z_t - (\frac{\lambda^2}{2} + \frac{\lambda \mu}{\sigma})t\right)$. Note that $t\mapsto X_t$ is (almost-surely) continuous (since $t\mapsto W_t$ is), and therefore $Z_{\tau_{\alpha}}=\alpha$. Doob's optional stopping theorem yields that the stopped martingale $\left(M^\lambda_{t \wedge \tau_{\alpha}}\right)_{t\in\mathbb{N}}$ is also a $\mathcal{F}$-martingale, and thus in particular
-$$
-\mathbb{E}[M^\lambda_{t \wedge \tau_{\alpha}}] = \mathbb{E}[M^\lambda_0] = 1\\,.
-$$
-It is now tempting to consider the limit $t\rightarrow +\infty$ to obtain $\mathbb{E}[M^\lambda_{\tau_{\alpha}}]=\mathbb{E}[e^{\frac{\lambda \alpha}{\sigma} - (\frac{\lambda^2}{2} + \frac{\lambda \mu}{\sigma})\tau_{\alpha}}]=1$. This is justified since
+It is a standard result in stochastic calculus that $M^\lambda$ defines a $\mathcal{F}$-martingale (it follows from the expression of the moment generating function on the standard Gaussian distribution coupled with the fact that the law of $W_t$ is $\mathcal{N}\left(0, t\right)$). Moreover, it can be rewritten as $M^\lambda_t = \exp\left( \frac{\lambda}{\sigma} Z_t - (\frac{\lambda^2}{2} + \frac{\lambda \mu}{\sigma})t\right)$. The reason why this is the "right" martingale will become apparent soon: it will help us compute exponential moments of $\tau_{\alpha}$, also known as the Laplace transform, which fully characterises its distribution.
+
+Note that $t\mapsto X_t$ is (almost-surely) continuous (since $t\mapsto W_t$ is), and therefore $Z_{\tau_{\alpha}}=\alpha$ on the event $\left\lbrace \tau_{\alpha} < \infty\right\rbrace$. As a consequence, it is straightforward to control $M^{\lambda}_{t\wedge \tau_{\alpha}}$ in the following way:
 $$
 \lvert M^\lambda_{t\wedge \tau_{\alpha}} \rvert \leq e^{\frac{\lambda}{\sigma} \max(Z_{t\wedge \tau_{\alpha}}, 0) } \leq e^{\frac{\lambda \alpha}{\sigma}}\\,,
 $$
-which allows to apply the dominated convergence theorem. Rearranging termes, we obtain the identity
+which allows to use the dominated convergence theorem as discussed above. Thereofore, Doob's optional stopping theorem yields:
+$$
+\mathbb{E}[M^\lambda_{\tau_{\alpha}}]=\mathbb{E}[e^{\frac{\lambda \alpha}{\sigma} - (\frac{\lambda^2}{2} + \frac{\lambda \mu}{\sigma})\tau_{\alpha}}]=1\\,.
+$$
+After rearranging termes, we obtain the identity
 $$
 \mathbb{E}[e^{-(\frac{\lambda^2}{2} + \frac{\lambda \mu}{\sigma})\tau_{\alpha}}] = e^{-\frac{\lambda \alpha}{\sigma}}\\,.
 $$
@@ -105,10 +128,10 @@ $$
 
 Besides characterising the distribution, the Laplace transform is also useful to compute the moments. Indeed, by differentiating w.r.t. $\beta$, we have that
 $$
--\frac{\partial}{\partial \beta} \mathbb{E}[e^{-\beta \tau_{\alpha}}]\bigg|_{\beta=0} = \mathbb{E}[\tau_{\alpha}] = \frac{\alpha}{\mu} \\,.
+-\frac{\partial}{\partial \beta} \mathbb{E}[e^{-\beta \tau_{\alpha}}]\bigg|_{\beta=0} = \mathbb{E}[\tau_{\alpha}] = \frac{\alpha}{\mu}\\,.
 $$
 
-After all these calculations, let's take a step back to reflect on what this result means. On average, a gambler reaches the critical threshold $\alpha=2$ after $\frac{\alpha}{\mu}=\frac{2}{0.63}\approx 3.17$ rounds. This is, perhaps quite surprisingly, very intuitive: if you start from €2 and loose on average 63 cents each time you play, it should take you a bit more than 3 rounds to consume your initial €2. The above shows that this back-of-the-envelope calculation is exact in the continuous time Gaussian case. Moreover, this result is independent of the variance $\sigma^2$.
+After all these calculations, let's take a step back to reflect on what this result means. On average, a gambler reaches the critical threshold $\alpha=2$ after $\frac{\alpha}{\mu}=\frac{2}{0.63}\approx 3.17$ rounds. This is, perhaps quite surprisingly, very intuitive: if you start from €2 and loose on average $63$ cents each time you play, it should take you a bit more than 3 rounds to consume your initial €2. The above shows that this back-of-the-envelope calculation is exact in the continuous time Gaussian case. Moreover, this result is independent of the variance $\sigma^2$.
 
 ### Nice! Does this mean that I can play thrice at the cost of a single ticket most of the time?
 
