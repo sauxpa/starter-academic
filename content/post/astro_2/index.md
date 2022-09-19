@@ -60,11 +60,12 @@ For the mean estimation, as expected, $\widehat{\mu}_t$ converges to the true ex
 &kurtosis = \frac{\mathbb{E}\left[\left(X-\mu\right)^4\right]}{\sigma^{2}} - 3\\,.
 \end{align*}
 
+<center>
 |          | $\mu$ | $\sigma$ | skewness | kurtosis |
 |----------|-------|----------|----------|----------|
 | Astro    | 0.63  | 20.67    | -1180    | 1426486  |
 | Gaussian | 0.63  | 20.67    | 0        | 0        |
-
+</center>
 
 ### TBC
 
