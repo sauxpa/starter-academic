@@ -151,7 +151,7 @@ We plot below this density for the Astro parameters ($\mu=0.63, \sigma=20.67, \a
 
 |                 | $\mu$ | $\sigma$ | 5th  | 25th | 50th | 75th | 95th |
 |-----------------|-------|----------|------|------|------|------|------|
-| IG approxmation | 0.63  | 20.67    | 0.00 | 0.01 | 0.02 | 0.09 | 2.14 |
+| IG approximation | 0.63  | 20.67    | 0.00 | 0.01 | 0.02 | 0.09 | 2.14 |
 
 
 ## What's next?

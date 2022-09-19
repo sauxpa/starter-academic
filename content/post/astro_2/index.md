@@ -71,12 +71,12 @@ Contrary to the continuous time Gaussian case, computing $\tau_{\alpha}$ for the
 
 {{< figure src="astro_vs_gaussian_flight_time_distributions.png" >}}
 
-The simulation reveals that the inverse Gaussian approximation underestimates the probability of small flight times and overestimates that of longer ($>100$) flight times. In other words, the inverse Gaussian approximation is too optimisitc and does not account properly for the high risk of early crash. We report mean, standard deviation and percentiles of $\tau_{\alpha}$ under both the simulated Astro and the inverse Gaussian models (confidence intervals for the simulated statistics are calculated by bootsrap with 1,000 independent replications).
+The simulation reveals that the inverse Gaussian approximation underestimates the probability of small flight times and overestimates that of longer ($>100$) flight times. In other words, the inverse Gaussian approximation is too optimisitc and does not account properly for the high risk of early crash. We report mean, standard deviation and percentiles of $\tau_{\alpha}$ under both the simulated Astro and the inverse Gaussian models (confidence intervals for the simulated statistics are calculated by bootstrap with 1,000 independent replications).
 
 |                   | $\mu$              | $\sigma$           | 5th             | 25th            | 50th            | 75th            | 95th               |
 |-------------------|--------------------|--------------------|-----------------|-----------------|-----------------|-----------------|--------------------|
-| Astro (simulated) | 3.20 [3.19 ; 3.21] | 60.8 [56.9 ; 64.1] | 1.0 [1.0 ; 1.0] | 1.0 [1.0 ; 1.0] | 1.0 [1.0 ; 1.0] | 2.0 [2.0 ; 2.0] | 11.0 [11.0 ; 11.0] |
-| IG approxmation   | 3.17               | 20.67              | 0.00            | 0.01            | 0.02            | 0.09            | 2.14               |
+| Astro (simulated) | 3.20 \n[3.19 ; 3.21] | 60.8 [56.9 ; 64.1] | 1.0 [1.0 ; 1.0] | 1.0 [1.0 ; 1.0] | 1.0 [1.0 ; 1.0] | 2.0 [2.0 ; 2.0] | 11.0 [11.0 ; 11.0] |
+| IG approximation   | 3.17               | 20.67              | 0.00            | 0.01            | 0.02            | 0.09            | 2.14               |
 
 
 ### TBC
