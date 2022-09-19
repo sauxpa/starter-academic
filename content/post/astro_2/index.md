@@ -40,7 +40,7 @@ categories:
 
 ## Assessing the quality of the Gaussian approximation
 
-In the previous post, we have calculated the distribution of the flight time of the cumulative Gaussian loss process $Z_t=\mu t + \sigma W_t$, that is $\tau_{\alpha} = \inf \left\lbrace t\in\mathbb{N}, Z_t \geq \alpha \right\rbrace$. In the game of Astro though, the loss distribution for scratching a card is far from being Gaussian: it is discrete, asymmetrical, with pronounced skewness towards small losses. The figure below shows the difference between the true Astro distribution (in green) and its Gaussian approximation $\mathcal{N}(\mu, \sigma^2)$ (in blue), with $\mu=0.63$ and $\sigma=20.67$.
+In the previous post, we have calculated the distribution of the flight time of the cumulative Gaussian loss process $Z_t=\mu t + \sigma W_t$, that is $\tau_{\alpha} = \inf \left\lbrace t\in\mathbb{N}, Z_t \geq \alpha \right\rbrace$. In the game of Astro though, the loss distribution for scratching a card is far from Gaussian: it is discrete, asymmetrical, with pronounced skewness towards small losses. The figure below shows the difference between the true Astro distribution (in green) and its Gaussian approximation $\mathcal{N}(\mu, \sigma^2)$ (in blue), with $\mu=0.63$ and $\sigma=20.67$.
 
 {{< figure src="astro_vs_gaussian_distributions.png" >}}
 
@@ -80,11 +80,21 @@ The simulation reveals that the inverse Gaussian approximation underestimates th
 
 The expectation of $\tau_{\alpha}$ is surprisingly well estimated in the inverse Gaussian model (3.17 versus 3.20 $\pm$ 0.01). This is not totally surprising: remember the expectation of $IG\left(\frac{\alpha}{\mu}, \frac{\alpha^2}{\sigma^2}\right)$ is $\frac{\alpha}{\mu}$, which depends only on the threshold $\alpha$ and the expectation $\mu$ of the Astro random walk, <em>not</em> on higher moments which are crucially underestimated by the Gaussian approximation. On the contrary, quantiles are poorly estimated by the Gaussian model, partly because of the continuous time (quantiles in the discrete time Astro model cannot be less than 1, whereas the inverse Gaussian distribution puts a lot of mass on $[0, 1]$).
 
-### Conclusion
+## Conclusion
 
-The inverse Gaussian approximation based on continuous time martingale argument offers an analytical expression that tracks quite accurately the expected flight time of scratching Astro cards. In a sense, this is an empirical manifestation of the ubiquitous property that Gaussian distributions are limits of distributions with finite variance (central limit theorem, Donsker's theorem on rnadom walks...). This sort of approximation is numerically consistent in expectation. but much less so for other statistics, e.g. the quantiles. We leave as an open problem whether this can be studied more formally (e.g. in a similar spirit to Glivenko-Cantolli classes). Moreover, let's emphasise again the difference in interpretation between mean and median: the expected flight time $\mathbb{E}\left[\tau_{\alpha}\right]\approx 3.20$ is driven upwards by unlikely events of large magnitude; the most likely outcome of scratching Astra cards is to loose 2€ all at once!
+The inverse Gaussian approximation based on continuous time martingale arguments offers an analytical expression that tracks quite accurately the expected flight time of scratching Astro cards. In a sense, this is an empirical manifestation of the ubiquitous property that Gaussian distributions are limits of distributions with finite variance (central limit theorem, Donsker's theorem on rnadom walks...). This sort of approximation is numerically consistent in expectation. but much less so for other statistics, e.g. the quantiles. We leave as an open problem whether this can be studied more formally (e.g. in a similar spirit to Glivenko-Cantolli classes). Moreover, let's emphasise again the difference in interpretation between mean and median: the expected flight time $\mathbb{E}\left[\tau_{\alpha}\right]\approx 3.20$ is driven upwards by unlikely events of large magnitude; the most likely outcome of scratching Astra cards is to loose 2€ all at once!
 
 Finally, you may check out the code used for the simulation and figures in this [repo](https://github.com/sauxpa/astro).
+
+
+## Bonus
+
+In this first post, we mentioned a subtlety of the sampling mechanism in Astro: bought tickets are effectively removed from the pool of available tickets, and therefore sampling from the Astro distribution should be done without replacement. Intuitively though, this should be negligible since the typical flight time is much smaller than the total amount of tickets (4,500,00). To convince ourselves, we report below figures on mean and variance estimation as well as the distribution of flight time under sampling without replcament and visually verify that they are similar to their counterparts with replacement.  
+
+{{< figure src="mu_sigma_astro_nr_vs_gaussian_distributions.png" >}}
+
+{{< figure src="astro_nr_vs_gaussian_flight_time_distributions.png" >}}
+
 
 Cheers!
 
