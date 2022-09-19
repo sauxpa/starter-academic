@@ -78,8 +78,9 @@ The simulation reveals that the inverse Gaussian approximation underestimates th
 | Astro (simulated) | 3.20 <br />[3.19 ; 3.21] | 60.8 <br />[56.9 ; 64.1] | 1.0 <br />[1.0 ; 1.0] | 1.0 <br />[1.0 ; 1.0] | 1.0 <br />[1.0 ; 1.0] | 2.0 <br />[2.0 ; 2.0] | 11.0 <br />[11.0 ; 11.0] |
 | IG approximation   | 3.17               | 20.67              | 0.00            | 0.01            | 0.02            | 0.09            | 2.14               |
 
+The expectation of $\tau_{\alpha}$ is surprisingly well estimated in the inverse Gaussian model (3.17 versus 3.20 [3.19 ; 3.21]). This is not totally surprising: remember the expectation of $IG\left(\frac{\alpha}{\mu}, \frac{\alpha^2}{\sigma^2}\right)$ is $\frac{\alpha}{\mu}$, which depends only on the threshold $\alpha$ and the expectation $\mu$ of the Astro random walk, *not* on higher moments which are crucially underestimated by the Gaussian approximation.
 
-### TBC
+### Conclusion
 
 ## License
 
