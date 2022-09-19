@@ -92,7 +92,7 @@ $$
 \forall s\in\mathcal{T},\ \mathbb{E}\left[M_{t+s}\mid \mathcal{F}\_t\right] = M_t\\,.
 $$
 
-Intuitively, this means a martingale represents a *fair* game: it uses only information available at time $t$ ($\mathcal{F}_t$-adapted), and given this information, the estimation of future values of $M$ is exactly the current known value $M_t$ (this property is sometimes referred to as martingales being "constant in expectation").
+Intuitively, this means a martingale represents a *fair* game: if $M_t$ represents a fictitious amount of wealth for the player at time $t$, then $M_t$ is fully known from the information available at time $t$ ($\mathcal{F}_t$-adapted) and the estimation of future wealth is exactly $M_t$ (by contrast, a loosing game would satisfy $\mathbb{E}\left[M_{t+s}\mid \mathcal{F}\_t\right] \leq M_t$; such processes are calleds supermartingales). This property is sometimes referred to as martingales being "constant in expectation".
 
 The crucial property of martingales for the study of stopping times is called Doob's optional stopping theorem: for any $\mathcal{F}$-stopping time, the *stopped* process $\left(M_{t\wedge \tau}\right)_{t\in\mathcal{T}}$ is also a $\mathcal{F}$-martingale, where $t\wedge \tau$ represents the minimum between $t$ and $\tau$. By taking the expectation of the above equality applied to the stopped martingale, we obtain the following identity:
 $$
