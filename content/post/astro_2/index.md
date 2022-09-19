@@ -65,6 +65,13 @@ For the mean estimation, as expected, $\widehat{\mu}_t$ converges to the true ex
 | Astro    | 0.63  | 20.67    | -1180    | 1426486  |
 | Gaussian | 0.63  | 20.67    | 0        | 0        |
 
+## Simulated flight time
+
+Contrary to the continuous time Gaussian case, computing $\tau_{\alpha}$ for the true Astro distrubtion is not possible in closed-form using similar martingale arguments as in the first post. However, it is straightforward to simulate random walks following the Astro distribution and therefore to estimate $\tau_{\alpha}$ by the Monte Carlo method. The result of 100 millions independent replications are reported below against the inverse Gaussian distribution coming from the Gaussian approximation model.
+
+{{< figure src="astro_vs_gaussian_flight_time_distributions.png" >}}
+
+
 ### TBC
 
 ## License
