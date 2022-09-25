@@ -69,9 +69,9 @@ which is a stopping time with respect to the natural filtration $\left(\mathcal{
 
 ## The Gaussian case
 
-The reader versed in martingales will almost surely recognise this problem as an instance of gambler's ruin. Indeed, the distribution of $\tau_{\alpha}$ can be fully explicited when the increments $\xi$ are Gaussian. For completeness, we derive below this standard result using stochastic calculus.
+The reader versed in martingales will almost surely recognise this problem as an instance of gambler's ruin. Indeed, the distribution of $\tau_{\alpha}$ can be fully explicited when the increments $\xi$ are Gaussian, in the limit of continuous time $t\in\mathbb{R}_+$ (instead of $t\in\mathbb{N}$). For completeness, we derive below this standard result using stochastic calculus.
 
-For convenience, we consider the continuous time setting, i.e. $t\in\mathbb{R}_+$ instead of $t\in\mathbb{N}$ and define the process $Z$ as
+We define the process $Z$ as
 \begin{align*}
 &dZ_t = \mu dt + \sigma dW_t\\,,\\\\
 &Z_0=0\\,,
@@ -85,7 +85,7 @@ and the flight time in this context naturally becomes $\tau_{\alpha} = \inf \lef
 
 ### Of martingales and stopping times
 
-Studying a stopping time can be quite hard, and coupling it with the right martingale is often the easiest approach. We recall here some basics results on the interplay between martingales and stopping times. For convenience, we denote by $\mathcal{T}$ either $\mathbb{N}$ or $\mathbb{R}_+$ (the elementary results presented here are essentially unchanged by moving to the continuous time setting).
+Studying a stopping time can be quite hard, and coupling it with the right martingale is often the easiest approach. We recall here some elementary results on the interplay between martingales and stopping times. For convenience, we denote by $\mathcal{T}$ either $\mathbb{N}$ or $\mathbb{R}_+$ (the results presented below are essentially unchanged by moving to the continuous or discrete time setting).
 
 First, a process $\left(M_t\right)\_{t\in\mathcal{T}}$ is a martingale with respect to a filtration $\left(\mathcal{F}\_t\right)\_{t\in\mathcal{T}}$ if for all $t\in\mathcal{T}$, $M_t$ is $\mathcal{F}\_t$-adapted, integrable and satisfies the equality
 $$
@@ -107,13 +107,13 @@ For $\lambda\in\mathbb{R}$, we define
 $$
 M^\lambda_t = \exp\left( \lambda W_t - \frac{\lambda^2}{2}t\right)\\,.
 $$
-It is a standard result in stochastic calculus that $M^\lambda$ defines a $\mathcal{F}$-martingale (it follows from the expression of the moment generating function on the standard Gaussian distribution coupled with the fact that the law of $W_t$ is $\mathcal{N}\left(0, t\right)$). Moreover, it can be rewritten as $M^\lambda_t = \exp\left( \frac{\lambda}{\sigma} Z_t - (\frac{\lambda^2}{2} + \frac{\lambda \mu}{\sigma})t\right)$. The reason why this is the "right" martingale will become apparent soon: it will help us compute exponential moments of $\tau_{\alpha}$, also known as the Laplace transform, which fully characterises its distribution.
+It is a standard result in stochastic calculus that $M^\lambda$ defines a $\mathcal{F}$-martingale (it follows from the expression of the moment generating function of the standard Gaussian distribution coupled with the fact that the law of $W_t$ is $\mathcal{N}\left(0, t\right)$). Moreover, it can be rewritten as $M^\lambda_t = \exp\left( \frac{\lambda}{\sigma} Z_t - (\frac{\lambda^2}{2} + \frac{\lambda \mu}{\sigma})t\right)$. The reason why this is the "right" martingale will become apparent soon: it will help us compute exponential moments of $\tau_{\alpha}$, also known as the Laplace transform, which fully characterises its distribution.
 
 Note that $t\mapsto Z_t$ is (almost-surely) continuous (since $t\mapsto W_t$ is), and therefore $Z_{\tau_{\alpha}}=\alpha$ on the event $\left\lbrace \tau_{\alpha} < \infty\right\rbrace$. As a consequence, it is straightforward to control $M^{\lambda}_{t\wedge \tau_{\alpha}}$ in the following way:
 $$
 \lvert M^\lambda_{t\wedge \tau_{\alpha}} \rvert \leq e^{\frac{\lambda}{\sigma} \max(Z_{t\wedge \tau_{\alpha}}, 0) } \leq e^{\frac{\lambda \alpha}{\sigma}}\\,,
 $$
-which allows to use the dominated convergence theorem as discussed above. Thereofore, Doob's optional stopping theorem yields:
+which allows to use the dominated convergence theorem as discussed above. Therefore, Doob's optional stopping theorem yields:
 $$
 \mathbb{E}[M^\lambda_{\tau_{\alpha}}]=\mathbb{E}[e^{\frac{\lambda \alpha}{\sigma} - (\frac{\lambda^2}{2} + \frac{\lambda \mu}{\sigma})\tau_{\alpha}}]=1\\,.
 $$

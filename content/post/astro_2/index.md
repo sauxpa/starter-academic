@@ -98,6 +98,8 @@ In this first post, we mentioned a subtlety of the sampling mechanism in Astro: 
 
 Cheers!
 
+P.S: kudos to [Pierre Bauvin](https://pierrebauvin.netlify.app/) for proofreading and for asking that I write it all down in the first place!
+
 ## License
 
 Copyright 2022-present [Patrick Saux](https://sauxpa.github.io/).
