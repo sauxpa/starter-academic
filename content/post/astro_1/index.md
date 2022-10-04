@@ -155,7 +155,7 @@ We plot below this density for the Astro parameters ($\mu=0.63, \sigma=20.67, \a
 
 
 ## What's next?
-Next time, we will talk about the flight time for the true Astro distribution, rather than under the Gaussian approximation. Closed-form expression of $\tau_{\alpha}$ are not available in this case, so simulations will prove handy.
+Next time, we will talk about the flight time for the true Astro distribution, rather than under the Gaussian approximation. Deriving a closed-form expression for the distribution of $\tau_{\alpha}$ is more intricate, so simulations will prove handy.
 
 ## License
 
