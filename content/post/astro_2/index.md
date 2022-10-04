@@ -40,7 +40,7 @@ categories:
 
 ## Assessing the quality of the Gaussian approximation
 
-In the previous post, we have calculated the distribution of the flight time of the cumulative Gaussian loss process $Z_t=\mu t + \sigma W_t$, that is $\tau_{\alpha} = \inf \left\lbrace t\in\mathbb{N}, Z_t \geq \alpha \right\rbrace$. In the game of Astro though, the loss distribution for scratching a card is far from Gaussian: it is discrete, asymmetrical, with pronounced skewness towards small losses. The figure below shows the difference between the true Astro distribution (in green) and its Gaussian approximation $\mathcal{N}(\mu, \sigma^2)$ (in blue), with $\mu=0.63$ and $\sigma=20.67$.
+In the previous post, we have calculated the distribution of the flight time of the cumulative Gaussian loss process $Z_t=\mu t + \sigma W_t$, that is $\bar{\tau}_{\alpha} = \inf \left\lbrace t\in\mathbb{R}_+, Z_t \geq \alpha \right\rbrace$. In the game of Astro though, the loss distribution for scratching a card is far from Gaussian: it is discrete, asymmetrical, with pronounced skewness towards small losses. The figure below shows the difference between the true Astro distribution (in green) and its Gaussian approximation $\mathcal{N}(\mu, \sigma^2)$ (in blue), with $\mu=0.63$ and $\sigma=20.67$.
 
 {{< figure src="astro_vs_gaussian_distributions.png" >}}
 
@@ -67,18 +67,18 @@ For the mean estimation, as expected, $\widehat{\mu}_t$ converges to the true ex
 
 ## Simulated flight time
 
-Contrary to the continuous time Gaussian case, computing $\tau_{\alpha}$ for the true Astro distrubtion is not possible in closed-form using similar martingale arguments as in the first post. However, it is straightforward to simulate random walks following the Astro distribution and therefore to estimate $\tau_{\alpha}$ by the Monte Carlo method. The result of 100 millions independent replications are reported below against the inverse Gaussian distribution coming from the Gaussian approximation model.
+Contrary to the continuous time Gaussian case $\bar{\tau}_{\alpha}$, computing $\tau_{\alpha}=\inf\left\lbrace t\in\mathbb{N}, X_t \geq \alpha\right\rbrace$ for the true Astro distrubtion is not possible in closed-form using similar martingale arguments as in the first post. However, it is straightforward to simulate random walks following the Astro distribution and therefore to estimate $\tau_{\alpha}$ by the Monte Carlo method. The result of 100 millions independent replications are reported below against the inverse Gaussian distribution coming from the Gaussian approximation model.
 
 {{< figure src="astro_vs_gaussian_flight_time_distributions.png" >}}
 
-The simulation reveals that the inverse Gaussian approximation underestimates the probability of small flight times and overestimates that of longer ($>100$) flight times. In other words, the inverse Gaussian approximation does not account properly for the high risk of early crash. We report mean, standard deviation and percentiles of $\tau_{\alpha}$ under both the simulated Astro and the inverse Gaussian models (95% confidence intervals for the simulated statistics are calculated by bootstrap with 400 independent replications).
+The simulation reveals that the inverse Gaussian approximation underestimates the probability of small flight times and overestimates that of longer ($>100$) flight times. In other words, the inverse Gaussian approximation does not account properly for the high risk of early crash. We report mean, standard deviation and percentiles of $\tau_{\alpha}$ and $\bar{\tau}_{\alpha}$, i.e. under both the simulated Astro and the inverse Gaussian models (95% confidence intervals for the simulated statistics are calculated by bootstrap with 400 independent replications).
 
 |                   | $\mu$              | $\sigma$           | 5th             | 25th            | 50th            | 75th            | 95th               |
 |-------------------|--------------------|--------------------|-----------------|-----------------|-----------------|-----------------|--------------------|
-| Astro (simulated) | 3.20 <br />[3.15 ; 3.27] | 60.8 <br />[39.9 ; 78.4] | 1.0 <br />[1.0 ; 1.0] | 1.0 <br />[1.0 ; 1.0] | 1.0 <br />[1.0 ; 1.0] | 2.0 <br />[2.0 ; 2.0] | 11.0 <br />[11.0 ; 11.0] |
-| IG approximation   | 3.17               | 20.67              | 0.00            | 0.01            | 0.02            | 0.09            | 2.14               |
+| Astro (simulated) $\tau_{\alpha}$| 3.20 <br />[3.15 ; 3.27] | 60.8 <br />[39.9 ; 78.4] | 1.0 <br />[1.0 ; 1.0] | 1.0 <br />[1.0 ; 1.0] | 1.0 <br />[1.0 ; 1.0] | 2.0 <br />[2.0 ; 2.0] | 11.0 <br />[11.0 ; 11.0] |
+| IG approximation $\bar{\tau}_{\alpha}$  | 3.17               | 20.67              | 0.00            | 0.01            | 0.02            | 0.09            | 2.14               |
 
-The expectation of $\tau_{\alpha}$ is, perhaps surprisingly, well estimated in the inverse Gaussian model; in fact, it is statistically plausible that this approximation recovers exactly the true expectation of $\tau_{\alpha}$ in the Astro model ($3.17 \in [3.15 ; 3.27]$). This is actually somewhat intuitive: remember the expectation of $IG\left(\frac{\alpha}{\mu}, \frac{\alpha^2}{\sigma^2}\right)$ is $\frac{\alpha}{\mu}$, which depends only on the threshold $\alpha$ and the expectation $\mu$ of the Astro random walk, <em>not</em> on higher moments which are crucially underestimated by the Gaussian approximation. On the contrary, quantiles are poorly estimated by the Gaussian model, partly because of the continuous time (quantiles in the discrete time Astro model cannot be less than 1, whereas the inverse Gaussian distribution puts a lot of mass on $[0, 1]$).
+The expectation of $\tau_{\alpha}$ is, perhaps surprisingly, well estimated in the inverse Gaussian model; in fact, it is statistically plausible that $\mathbb{E}\left[\tau_{\alpha}\right] = \mathbb{E}\left[\bar{\tau}_{\alpha}\right]$ ($3.17 \in [3.15 ; 3.27]$). This is actually somewhat intuitive: remember the expectation of $IG\left(\frac{\alpha}{\mu}, \frac{\alpha^2}{\sigma^2}\right)$ is $\frac{\alpha}{\mu}$, which depends only on the threshold $\alpha$ and the expectation $\mu$ of the Astro random walk, <em>not</em> on higher moments which are crucially underestimated by the Gaussian approximation. On the contrary, quantiles are poorly estimated by the Gaussian model, partly because of the continuous time (quantiles in the discrete time Astro model cannot be less than 1, whereas the inverse Gaussian distribution puts a lot of mass on $[0, 1]$).
 
 ## Conclusion
 

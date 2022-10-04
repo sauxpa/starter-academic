@@ -80,7 +80,7 @@ where $\mu=0.63$, $\sigma=20.67$ and $W$ is a standard Brownian motion with resp
 $$
 Z_t = \mu t + \sigma W_t\\,,
 $$
-and the flight time in this context naturally becomes $\tau_{\alpha} = \inf \left\lbrace t\in\mathbb{N}, Z_t \geq \alpha \right\rbrace$.
+and the flight time in this context naturally becomes $\bar{\tau}_{\alpha} = \inf \left\lbrace t\in\mathbb{R}_+, Z_t \geq \alpha \right\rbrace$.
 
 
 ### Of martingales and stopping times
@@ -109,39 +109,39 @@ M^\lambda_t = \exp\left( \lambda W_t - \frac{\lambda^2}{2}t\right)\\,.
 $$
 It is a standard result in stochastic calculus that $M^\lambda$ defines a $\mathcal{F}$-martingale (it follows from the expression of the moment generating function of the standard Gaussian distribution coupled with the fact that the law of $W_t$ is $\mathcal{N}\left(0, t\right)$). Moreover, it can be rewritten as $M^\lambda_t = \exp\left( \frac{\lambda}{\sigma} Z_t - (\frac{\lambda^2}{2} + \frac{\lambda \mu}{\sigma})t\right)$. The reason why this is the "right" martingale will become apparent soon: it will help us compute exponential moments of $\tau_{\alpha}$, also known as the Laplace transform, which fully characterises its distribution.
 
-Note that $t\mapsto Z_t$ is (almost-surely) continuous (since $t\mapsto W_t$ is), and therefore $Z_{\tau_{\alpha}}=\alpha$ on the event $\left\lbrace \tau_{\alpha} < \infty\right\rbrace$. As a consequence, it is straightforward to control $M^{\lambda}_{t\wedge \tau_{\alpha}}$ in the following way:
+Note that $t\mapsto Z_t$ is (almost-surely) continuous (since $t\mapsto W_t$ is), and therefore $Z_{\bar{\tau}_{\alpha}}=\alpha$ on the event $\left\lbrace \bar{\tau}_{\alpha} < \infty\right\rbrace$. As a consequence, it is straightforward to control $M^{\lambda}_{t\wedge \bar{\tau}_{\alpha}}$ in the following way:
 $$
-\lvert M^\lambda_{t\wedge \tau_{\alpha}} \rvert \leq e^{\frac{\lambda}{\sigma} \max(Z_{t\wedge \tau_{\alpha}}, 0) } \leq e^{\frac{\lambda \alpha}{\sigma}}\\,,
+\lvert M^\lambda_{t\wedge \bar{\tau}_{\alpha}} \rvert \leq e^{\frac{\lambda}{\sigma} \max(Z_{t\wedge \bar{\tau}_{\alpha}}, 0) } \leq e^{\frac{\lambda \alpha}{\sigma}}\\,,
 $$
 which allows to use the dominated convergence theorem as discussed above. Therefore, Doob's optional stopping theorem yields:
 $$
-\mathbb{E}[M^\lambda_{\tau_{\alpha}}]=\mathbb{E}[e^{\frac{\lambda \alpha}{\sigma} - (\frac{\lambda^2}{2} + \frac{\lambda \mu}{\sigma})\tau_{\alpha}}]=1\\,.
+\mathbb{E}[M^\lambda_{\bar{\tau}_{\alpha}}]=\mathbb{E}[e^{\frac{\lambda \alpha}{\sigma} - (\frac{\lambda^2}{2} + \frac{\lambda \mu}{\sigma})\bar{\tau}_{\alpha}}]=1\\,.
 $$
 After rearranging termes, we obtain the identity
 $$
-\mathbb{E}[e^{-(\frac{\lambda^2}{2} + \frac{\lambda \mu}{\sigma})\tau_{\alpha}}] = e^{-\frac{\lambda \alpha}{\sigma}}\\,.
+\mathbb{E}[e^{-(\frac{\lambda^2}{2} + \frac{\lambda \mu}{\sigma})\bar{\tau}_{\alpha}}] = e^{-\frac{\lambda \alpha}{\sigma}}\\,.
 $$
-This is almost the Laplace transform of $\tau_{\alpha}$, which we define for $\beta>0$ as $\mathbb{E}[e^{-\beta \tau_{\alpha}}]$. Since $\tau_{\alpha}$ is nonnegative, this Laplace transform fully characterises its distribution. Solving $\beta = \frac{\lambda^2}{2} + \frac{\lambda \mu}{\sigma}$ in terms of $\lambda$ yields $\lambda=-\frac{\mu}{\sigma} + \sqrt{\frac{\mu^2}{\sigma^2} + 2\beta}$ for $\lambda\geq 0$, i.e.
+This is almost the Laplace transform of $\bar{\tau}_{\alpha}$, which we define for $\beta>0$ as $\mathbb{E}[e^{-\beta \bar{\tau}_{\alpha}}]$. Since $\bar{\tau}_{\alpha}$ is nonnegative, this Laplace transform fully characterises its distribution. Solving $\beta = \frac{\lambda^2}{2} + \frac{\lambda \mu}{\sigma}$ in terms of $\lambda$ yields $\lambda=-\frac{\mu}{\sigma} + \sqrt{\frac{\mu^2}{\sigma^2} + 2\beta}$ for $\lambda\geq 0$, i.e.
 $$
-\mathbb{E}[e^{-\beta \tau_{\alpha}}] = e^{\frac{\alpha \mu}{\sigma^2}\left(1 - \sqrt{1 + \frac{2\sigma^2 \beta}{\mu^2}}\right)} \\,.
+\mathbb{E}[e^{-\beta \bar{\tau}_{\alpha}}] = e^{\frac{\alpha \mu}{\sigma^2}\left(1 - \sqrt{1 + \frac{2\sigma^2 \beta}{\mu^2}}\right)} \\,.
 $$
 
 Besides characterising the distribution, the Laplace transform is also useful to compute the moments. Indeed, by differentiating w.r.t. $\beta$, we have that
 $$
--\frac{\partial}{\partial \beta} \mathbb{E}[e^{-\beta \tau_{\alpha}}]\bigg|_{\beta=0} = \mathbb{E}[\tau_{\alpha}] = \frac{\alpha}{\mu}\\,.
+-\frac{\partial}{\partial \beta} \mathbb{E}[e^{-\beta \bar{\tau}_{\alpha}}]\bigg|_{\beta=0} = \mathbb{E}[\tau_{\alpha}] = \frac{\alpha}{\mu}\\,.
 $$
 
 After all these calculations, let's take a step back to reflect on what this result means. On average, a gambler reaches the critical threshold $\alpha=2$ after $\frac{\alpha}{\mu}=\frac{2}{0.63}\approx 3.17$ rounds. This is, perhaps quite surprisingly, very intuitive: if you start from €2 and loose on average $63$ cents each time you play, it should take you a bit more than 3 rounds to consume your initial €2. The above shows that this back-of-the-envelope calculation is exact in the continuous time Gaussian case. Moreover, this result is independent of the variance $\sigma^2$.
 
 ### Nice! Does this mean that I can play thrice at the cost of a single ticket most of the time?
 
-Not at all! It is important to make the distinction here between *mean* and *median* flight times. Intuitively, the distribution of flight time $\tau_{\alpha}$ should be quite asymmetrical around its mean: events where large gains are made early (e.g. first ticket yields €100) will result in very large flight times but remain quite rare, while events of "early crashes" (the first few tickets are loosers) are much more frequent. Therefore, the median flight time, i.e. the majority of flight times are below it, should be less than the mean flight time, which is driven upwards by the "early luck" outliers. This type of distribution is called <em>right-skewed</em>.
+Not at all! It is important to make the distinction here between *mean* and *median* flight times. Intuitively, the distribution of flight time $\bar{\tau}_{\alpha}$ should be quite asymmetrical around its mean: events where large gains are made early (e.g. first ticket yields €100) will result in very large flight times but remain quite rare, while events of "early crashes" (the first few tickets are loosers) are much more frequent. Therefore, the median flight time, i.e. the majority of flight times are below it, should be less than the mean flight time, which is driven upwards by the "early luck" outliers. This type of distribution is called <em>right-skewed</em>.
 
 ### Flight time distribution in the Gaussian case
 
-The expression of the Laplace transform $\mathbb{E}[e^{-\beta \tau_{\alpha}}]$ reveals that $\tau_{\alpha}$ follows an Inverse Gaussian distribution $IG\left(\frac{\alpha}{\mu}, \frac{\alpha^2}{\sigma^2}\right)$, the density of which is given by:
+The expression of the Laplace transform $\mathbb{E}[e^{-\beta \bar{\tau}_{\alpha}}]$ reveals that $\bar{\tau}_{\alpha}$ follows an Inverse Gaussian distribution $IG\left(\frac{\alpha}{\mu}, \frac{\alpha^2}{\sigma^2}\right)$, the density of which is given by:
 $$
-p_{\tau_{\alpha}}(t) = \sqrt{\frac{\alpha^2}{2\pi \sigma^2 t^3}} \exp\left(-\frac{\left(\mu t - \alpha\right)^2}{2\sigma^2 t} \right)\\,.
+p_{\bar{\tau}_{\alpha}}(t) = \sqrt{\frac{\alpha^2}{2\pi \sigma^2 t^3}} \exp\left(-\frac{\left(\mu t - \alpha\right)^2}{2\sigma^2 t} \right)\\,.
 $$
 
 We plot below this density for the Astro parameters ($\mu=0.63, \sigma=20.67, \alpha=2$), as well as the mean, the median, and the 5th, 25th, 75th and 95th percentiles. This distribution appears to be significantly right-skewed: even the 95th percentile is below the mean ($2.14$ versus $3.17$). In other words, according to the Gaussian approximation, it is really unlikely (less than 5% chance) that your flight time will be above 2 rounds, even though the mean flight time is above 3!
