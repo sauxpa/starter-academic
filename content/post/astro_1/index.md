@@ -143,6 +143,11 @@ The expression of the Laplace transform $\mathbb{E}[e^{-\beta \bar{\tau}\_{\alph
 $$
 p_{\bar{\tau}\_{\alpha}}(t) = \sqrt{\frac{\alpha^2}{2\pi \sigma^2 t^3}} \exp\left(-\frac{\left(\mu t - \alpha\right)^2}{2\sigma^2 t} \right)\\,.
 $$
+Its mean and variance are given respectively by
+\begin{align*}
+\mathbb{E}\left[\bar{\tau}\_{\alpha}\right]&= \frac{\alpha}{\mu}\\,,\\\\
+\mathbb{V}\left[\bar{\tau}\_{\alpha}\right]&= \frac{\alpha \sigma^2}{\mu^3}\\,.
+\end{align*}
 
 We plot below this density for the Astro parameters ($\mu=0.63, \sigma=20.67, \alpha=2$), as well as the mean, the median, and the 5th, 25th, 75th and 95th percentiles. This distribution appears to be significantly right-skewed: even the 95th percentile is below the mean ($2.14$ versus $3.17$). In other words, according to the Gaussian approximation, it is really unlikely (less than 5% chance) that your flight time will be above 2 rounds, even though the mean flight time is above 3!
 
