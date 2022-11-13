@@ -72,7 +72,7 @@ slides: ""
 ---
 
 {{% callout note %}}
-
+Linear bandits with a twist.
 {{% /callout %}}
 
 

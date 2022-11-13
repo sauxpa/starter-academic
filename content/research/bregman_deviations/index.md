@@ -74,7 +74,7 @@ slides: ""
 ---
 
 {{% callout note %}}
-
+Time-uniform concentration for a vast class of parametric distributions.
 {{% /callout %}}
 
 <!--
