@@ -105,7 +105,7 @@ In particular for the Astro distribution, $\alpha=\Delta=\alpha^+$; in other wor
 
 ## Going further: higher moments
 
-Thanks to the exact calculation of the Laplace transform of $\tau\_{\alpha}$, it is possible to derive higher moments by differentiating $\mathbb{E}\left[e^{-\beta \tau\_{\alpha}}\right]$ multiple times. A key observation is that the function $\psi$ fully describes the <em>cumulants</em> $(\kappa_n)_{n\geq 1}$ of the distribution of $\xi$, which are an alternative to moments (intuitively, the $n$-th cumulant is the component of the $n$-th moment that is "independent" of the previous moments; for instance, $\kappa_2$ is the variance of $\xi$ rather than $\mathbb{E}[\xi^2]$). More formally, the cumulants are defined by the power series expansion
+Thanks to the exact calculation of the Laplace transform of $\tau\_{\alpha}$, it is possible to derive higher moments by differentiating $\mathbb{E}\left[e^{-\beta \tau\_{\alpha}}\right]$ multiple times. A key observation is that the function $\psi$ fully describes the <em>cumulants</em> $(\kappa_n)\_{n\geq 1}$ of the distribution of $\xi$, which are an alternative to moments (intuitively, the $n$-th cumulant is the component of the $n$-th moment that is "independent" of the previous moments; for instance, $\kappa_2$ is the variance of $\xi$ rather than $\mathbb{E}[\xi^2]$). More formally, the cumulants are defined by the power series expansion
 $$
 \psi(\lambda) = \sum_{n=1}^{+\infty} \kappa_n \frac{\lambda^n}{n!}\\,,
 $$
