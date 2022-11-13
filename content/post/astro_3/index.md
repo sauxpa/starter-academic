@@ -50,18 +50,22 @@ $$
 
 ## What goes wrong in the method of martingales for discrete random walks?
 
-In the continuous time Gaussian setting, we replaced $\tau\_{\alpha}$ and $\left(X_t\right)\_{t\in\mathbb{N}}$ with $\bar{\tau}\_{\alpha} = \left\lbrace t\in\mathbb{R}\_+, Z\_t \geq \alpha\right\rbrace$ and $\left(Z_t\right)\_{t\in\mathbb{R}_+}$ satisfying the stochastic differential equation $dZ_t = \mu dt + \sigma dW_t$, driven by a Brownian motion $W$. For any $\lambda\in\mathbb{R}$, $M^\lambda_t = \exp\left( \frac{\lambda}{\sigma} Z_t - (\frac{\lambda^2}{2} + \frac{\lambda \mu}{\sigma})t\right)$ defines a martingale and a standard application of Doob's optional stopping theorem showed that $\mathbb{E}\left[M^\lambda\_{\bar{\tau}\_{\alpha}}\right]=1$. Now in general, this gives information on two random variables simultaneously: $\bar{\tau}\_{\alpha}$ and $Z\_{\bar{\tau}\_{\alpha}}$. The whole trick is to disentangle the contribution of each of these variables and extract the Laplace transform of $\bar{\tau}\_{\alpha}$, which is $\mathbb{E}\left[e^{-\beta \bar{\tau}\_{\alpha}}\right]$ for $\beta>0$. In the continuous time setting, the almost sure continuity of $t\mapsto Z_t$ and the definition of $\bar{\tau}\_{\alpha}$ shows that $Z\_{\tau\_{\alpha}}=\alpha$, which is not random at all, thus revealing information directly on $\bar{\tau}\_{\alpha}$.
+In the continuous time Gaussian setting, we replaced $\tau\_{\alpha}$ and $\left(X_t\right)\_{t\in\mathbb{N}}$ with $\bar{\tau}\_{\alpha} = \left\lbrace t\in\mathbb{R}\_+, Z\_t \geq \alpha\right\rbrace$ and $\left(Z_t\right)\_{t\in\mathbb{R}_+}$ satisfying the stochastic differential equation $dZ_t = \mu dt + \sigma dW_t$, driven by a Brownian motion $W$. Then for any $\lambda\in\mathbb{R}$,
+$$
+M^\lambda_t = \exp\left( \frac{\lambda}{\sigma} Z_t - (\frac{\lambda^2}{2} + \frac{\lambda \mu}{\sigma})t\right)
+$$
+defines a martingale and a standard application of Doob's optional stopping theorem showed that $\mathbb{E}\left[M^\lambda\_{\bar{\tau}\_{\alpha}}\right]=1$. Now in general, this gives information on two random variables simultaneously: $\bar{\tau}\_{\alpha}$ and $Z\_{\bar{\tau}\_{\alpha}}$. The whole trick is to disentangle the contribution of each of these variables and extract the Laplace transform of $\bar{\tau}\_{\alpha}$, which is $\mathbb{E}\left[e^{-\beta \bar{\tau}\_{\alpha}}\right]$ for $\beta>0$. In the continuous time setting, the almost sure continuity of $t\mapsto Z_t$ and the definition of $\bar{\tau}\_{\alpha}$ shows that $Z\_{\tau\_{\alpha}}=\alpha$ (almost surely), which is not random at all, thus revealing information directly on $\bar{\tau}\_{\alpha}$.
 
-By contrast, the discrete time counterpart $X\_{\tau\_\alpha}$ does not satisfy a similar equality in general, but only the inequality $X\_{\tau\_\alpha} \geq \alpha$. Worse, the distribution of $X_{\tau\_\alpha}$ can be quite hard to characterise as there are potentially many different sequences of steps $\xi_1, \dots, \xi\_{\tau\_\alpha}$ that result in crossing the barrier $\alpha$. In a special case of step distribution however, $X\_{\tau\_\alpha}$ takes a simple form, namely if the process $X$ can only increase by a fixed step size, or decrease by multiples of the same step size. More precisely, let $\Delta>0$, $(p_k)_{k\in\mathbb{N}}$ such that $p_k\in[0, 1]$ for all $k\in\mathbb{N}$ and $\sum_{k\in\mathbb{N}} p_k < 1$, and define the  i.i.d. step sequence $(\xi)_{t\in\mathbb{N}}$ by
+By contrast, the discrete time counterpart $X\_{\tau\_\alpha}$ does not satisfy a similar equality in general, but only the inequality $X\_{\tau\_\alpha} \geq \alpha$. Worse, the distribution of $X_{\tau\_\alpha}$ can be quite difficult to characterise as there are potentially many different sequences of steps $\xi_1, \dots, \xi\_{\tau\_\alpha}$ that result in crossing the barrier $\alpha$. In a special case of step distribution however, $X\_{\tau\_\alpha}$ takes a simple form, namely if the process $X$ can only increase by a fixed step size, or decrease by multiples of the same step size. More precisely, let $\Delta>0$, $(p_k)_{k\in\mathbb{N}}$ such that $p_k\in[0, 1]$ for all $k\in\mathbb{N}$ and $\sum_{k\in\mathbb{N}} p_k < 1$, and define the  i.i.d. step sequence $(\xi)_{t\in\mathbb{N}}$ by
 $$
 \xi_t = \begin{cases}
 -k\Delta& \text{with probability $p_k$}\\,,\\\\
 \Delta& \text{with probability $1-\sum_{k\in\mathbb{N}} p_k$}\\,.\\\\
 \end{cases}
 $$
-Indeed, this forces the process $X$ to move over the grid $\Delta \mathbb{N}$, and since $\alpha>0$ and $X$ can only increase by $\Delta$, $X\_{\tau\_{\alpha}}$ can only take a single value corresponding to $X\_{\tau\_{\alpha}-1}<\alpha$ and $\xi\_{\tau\_{\alpha}}=\Delta$, i.e. $X\_{\tau\_{\alpha}}=\lceil \frac{\alpha}{\Delta}\rceil\Delta =: \alpha^+$, where $\lceil x \rceil$ denotes the ceil operator (smallest integer larger than $x$).
+Indeed, this forces the process $X$ to move over the grid $\Delta \mathbb{Z}$, and since $\alpha>0$ and $X$ can only increase by $\Delta$, this implies that $X\_{\tau\_{\alpha}}$ can only take a single value corresponding to $X\_{\tau\_{\alpha}-1}<\alpha$ and $\xi\_{\tau\_{\alpha}}=\Delta$, i.e. $X\_{\tau\_{\alpha}}=\lceil \frac{\alpha}{\Delta}\rceil\Delta =: \alpha^+$, where $\lceil x \rceil$ denotes the ceil operator (smallest integer larger than $x$).
 
-As it turns out, this is exactly the format of the Astro step distribution: $\xi_t$ is equal to €2 minus the gain of the $t$-th ticket, and since all gains are multiple of €2, with a minimum of 0€, the above property holds with $\Delta=$€2 and $(p_k)_{k\in\mathbb{N}}$ the corresponding gain probabilities.
+As it turns out, this rather specific property is satisfied by the Astro step distribution: $\xi_t$ is equal to €2 minus the gain of the $t$-th ticket, and since all gains are multiple of €2, with a minimum of 0€, the above property holds with $\Delta$ equal to €2 and $(p_k)_{k\in\mathbb{N}}$ the corresponding gain probabilities.
 
 ## Exponential supermartingale and expected flight time
 
@@ -70,10 +74,9 @@ $$
 \psi\colon \lambda\in\mathbb{R}\^\*\_+ \mapsto \log\mathbb{E}\left[ e^{\lambda \xi}\right]\\,.
 $$
 Then, for any $\lambda>0$, the process defined for $t\in\mathbb{N}$ by $M^\lambda_t = e^{X_t  - t\psi(\lambda)}$ is a martingale. Using the expression of the step size sequence, we have
-\begin{align*}
-\psi(\lambda) &= \log\left(\sum_{k\in\mathbb{N}} p_k e^{-k \Delta \lambda} + \left(1 - \sum_{k\in\mathbb{N}}p_k\right) e^{\lambda \Delta} \right)\\\\
-&= \lambda \Delta + \log\left(1 - \sum_{k\in\mathbb{N}}p_k\left(1 - e^{-(k+1)\Delta}\right)\right)\\,.
-\end{align*}
+$$
+\psi(\lambda) = \lambda \Delta + \log\left(1 - \sum_{k\in\mathbb{N}}p_k\left(1 - e^{-(k+1)\Delta}\right)\right)\\,.
+$$
 Moreover, $e^{\psi(\lambda)} = \mathbb{E}\left[e^{\lambda \xi}\right] \geq e^{\lambda \mu}$ by convexity and Jensen's inequality, where
 $$
 \mu=\mathbb{E}\left[\xi\right] = \Delta \left( 1 - \sum_{k\in\mathbb{N}} (1+k)p_k\right)\\,.
