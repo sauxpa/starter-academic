@@ -37,7 +37,7 @@ tags:
 categories:
 -
 ---
-In the previous posts, we have calculated the distribution of the so-called "flight time" $\tau\_{\alpha}$, interpreted as the (random) number of Astro card a player can scratch before loosing more than their initial investment $\alpha$ (typically $\alpha=$€2), both in closed-form under a continuous time Gaussian setting and empirically using random simulations of the exact Astro loss random walk. These two approaches showed that $\frac{\alpha}{\mu}$, where $\mu$ is the average loss of random walk step, was a good estimation of $\mathbb{E}\left[ \tau\_{\alpha}\right]$; in the case of Astro, this estimate is $\mathbb{E}\left[ \tau\_{\alpha}\right]\approx 3.17$. We now show that this estimation is actually correct. We will actually prove a more general result, namely a closed-form expression of the Laplace transform of $\tau\_{\alpha}$, based on the method of martingales already used in the Gaussian approximation.
+In the previous posts, we calculated the distribution of the so-called "flight time" $\tau\_{\alpha}$, interpreted as the (random) number of Astro card a player can scratch before loosing more than their initial investment $\alpha$ (typically $\alpha$ is €2), both in closed-form under a continuous time Gaussian setting and empirically using random simulations of the exact Astro loss random walk. These two approaches showed that $\frac{\alpha}{\mu}$, where $\mu$ is the average loss of random walk step, was a good estimation of $\mathbb{E}\left[ \tau\_{\alpha}\right]$; in the case of Astro, this estimate is $\mathbb{E}\left[ \tau\_{\alpha}\right]\approx 3.17$. We now show that this estimation is actually correct. We will actually prove a more general result, namely a closed-form expression of the Laplace transform of $\tau\_{\alpha}$, based on the method of martingales already used in the Gaussian approximation.
 
 We recall that $\left(\xi_t\right)\_{t\in\mathbb{N}}$ denotes a i.i.d sequence of random Astro losses and let
 $$
@@ -59,7 +59,7 @@ $$
 \Delta& \text{with probability $1-\sum_{k\in\mathbb{N}} p_k$}\\,.\\\\
 \end{cases}
 $$
-Indeed, this forces the process $X$ to move over the grid $\Delta \mathbb{N}$, and since $\alpha>0$ and $X$ can only increase by $\Delta$, $X\_{\tau\_{\alpha}$ can only take a single value corresponding to $X\_{\tau\_{\alpha}-1}<\alpha$ and $\xi\_{\tau\_{\alpha}}=\Delta$, i.e. $X\_{\tau\_{\alpha}}=\lceil \frac{\alpha}{\Delta}\rceil\Delta =: \alpha^+$, where $\lceil x \rceil$ denotes the ceil operator (smallest integer larger than $x$).
+Indeed, this forces the process $X$ to move over the grid $\Delta \mathbb{N}$, and since $\alpha>0$ and $X$ can only increase by $\Delta$, $X\_{\tau\_{\alpha}}$ can only take a single value corresponding to $X\_{\tau\_{\alpha}-1}<\alpha$ and $\xi\_{\tau\_{\alpha}}=\Delta$, i.e. $X\_{\tau\_{\alpha}}=\lceil \frac{\alpha}{\Delta}\rceil\Delta =: \alpha^+$, where $\lceil x \rceil$ denotes the ceil operator (smallest integer larger than $x$).
 
 As it turns out, this is exactly the format of the Astro step distribution: $\xi_t$ is equal to €2 minus the gain of the $t$-th ticket, and since all gains are multiple of €2, with a minimum of 0€, the above property holds with $\Delta=$€2 and $(p_k)_{k\in\mathbb{N}}$ the corresponding gain probabilities.
 
