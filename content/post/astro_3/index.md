@@ -95,13 +95,32 @@ since $\psi(0)=0$.
 
 The term $(\psi^{-1})'(0)$ can be calculated using the inverse function rule, which yields $(\psi^{-1})'(0)=\frac{1}{\psi'(0)}$. A direct calculation shows that
 $$
-\psi'(\lambda) = \Delta + \frac{-\Delta\sum_{k\in\mathbb{N}}(k+1)p_k e^{-(k+1) \Delta \lambda}}{1 - \sum_{k\in\mathbb{N}}(k+1)p_k}\\,,
+\psi'(\lambda) = \Delta + \frac{-\Delta\sum_{k\in\mathbb{N}}(k+1)p_k e^{-(k+1) \Delta \lambda}}{1 - \sum_{k\in\mathbb{N}}p_k\left( 1 - e^{-(k+1)\Delta}\right)}\\,,
 $$
 and thus $\psi'(0) = \Delta\left(1 - \sum_{k\in\mathbb{N}}(k+1)p_k\right) = \mu$. Going back to the expected flight time, we have
 $$
 \mathbb{E}\left[ \tau\_{\alpha} \right] = \frac{\alpha^+}{\mu}\\,.
 $$
 In particular for the Astro distribution, $\alpha=\Delta=\alpha^+$; in other words, $\mathbb{E}[\tau\_{\alpha}]=\mathbb{E}\left[\bar{\tau}\_{\alpha}\right]$, i.e. the Gaussian approximation was actually correct in expectation!
+
+## Going further: higher moments
+
+Thanks to the exact calculation of the Laplace transform of $\tau\_{\alpha}$, it is possible to derive higher moments by differentiating $\mathbb{E}\left[e^{-\beta \tau\_{\alpha}}\right]$ multiple times. A key observation is that the function $\psi$ fully describes the <em>cumulants</em> $(\kappa_n)_{n\geq 1}$ of the distribution of $\xi$, which are an alternative to moments (intuitively, the $n$-th cumulant is the component of the $n$-th moment that is "independent" of the previous moments; for instance, $\kappa_2$ is the variance of $\xi$ rather than $\mathbb{E}[\xi^2]$). More formally, the cumulants are defined by the power series expansion
+$$
+\psi(\lambda) = \sum_{n=1}^{+\infty} \kappa_n \frac{\lambda^n}{n!}\\,,
+$$
+in particular $\psi^{(n)}(0)=\kappa_n$. Therefore, by successive differentiations of $\beta\mapsto e^{-\psi^{-1}(\beta)\alpha^+}$ or $\beta\mapsto -\psi^{-1}(\beta)\alpha^+$, we can obtain the successive moments or cumulants of $\tau\_{\alpha}$.
+
+For instance, applying twice the inverse function rule yields
+$$
+\left(\psi^{-1}\right)''\left(\beta\right) = -\frac{\psi''(\lambda)}{\psi'(\lambda)^3}\\,,
+$$
+and thus the variance of $\tau\_{\alpha}$ is
+$$
+\mathbb{V}\left[\tau_{\alpha}\right] = \frac{\alpha^+ \sigma^2}{\mu^3}\\,,
+$$
+where $\sigma\approx 20.67$ is the standard deviation of $\xi$. As it turns out, this is also exactly the formula provided by the inverse Gaussian distribution of $\bar{\tau}\_{\alpha}$!
+
 
 ## License
 
