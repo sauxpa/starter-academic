@@ -119,7 +119,23 @@ and thus the variance of $\tau\_{\alpha}$ is
 $$
 \mathbb{V}\left[\tau_{\alpha}\right] = \frac{\alpha^+ \sigma^2}{\mu^3} \approx 58.46\\,,
 $$
-where $\sigma\approx 20.67$ is the standard deviation of $\xi$. As it turns out, this is also exactly the formula provided by the inverse Gaussian distribution of $\bar{\tau}\_{\alpha}$!
+where $\sigma\approx 20.67$ is the standard deviation of $\xi$. As it turns out, this is also exactly the formula provided by the inverse Gaussian distribution $IG\left(\frac{\alpha}{\mu}, \frac{\alpha^2}{\sigma^2}\right)$, i.e. $\mathbb{V}\left[\tau_{\alpha}\right] = \mathbb{V}\left[\bar{\tau}_{\alpha}\right]$!
+
+A natural question is whether higher moments/cumulants are also well approximated by the inverse Gaussian distribution. Intuitively, this should not be the case since the Gaussian distribution used in this approximation only matches the first two moments of $\xi$, which is confirmed by the empirical analysis performed in the second post. We confirm this by an explicit calculation of the third cumulant of $\tau\_{\alpha}$.
+
+Indeed, on the one hand, the third cumulant of the inverse Gaussian distribution is given by
+$$
+\bar{\kappa}\_3 = \mathbb{E}\left[\left(\bar{\tau}\_{\alpha}-\frac{\alpha}{\mu}\right)^3\right] = \frac{3\sigma^4\alpha}{\mu^5}\\,.
+$$.
+On the other hand, yet another application of the inverse function rule shows that
+$$
+\left(\psi^{-1}\right)^{(3)}\left(\beta\right) = \frac{3\psi'(\lambda)^2\psi''(\lambda)^2 - \psi'(\lambda)^3\psi^{(3)}(\lambda)}{\psi'(\lambda)^7}\\,,
+$$
+and thus
+$$
+\kappa_3 = \frac{3\sigma^4\alpha^+}{\mu^5} - \frac{\psi^{(3)}(0)\alpha^+}{\mu^4} = \bar{\kappa}\_3 - \frac{\psi^{(3)}(0)\alpha^+}{\mu^4}\\,,
+$$
+where $\psi^{(3)}(0)=\mathbb{E}\left[\left(\xi-\mu\right)^3\right]$ is the third cumulant of $\xi$. In other words, negative skewness in the true Astro distribution translates into <em>higher<\em> skewness in the flight time distribution than the inverse Gaussian approximation suggests.
 
 
 ## License

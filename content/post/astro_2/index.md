@@ -40,24 +40,24 @@ categories:
 
 ## Assessing the quality of the Gaussian approximation
 
-In the previous post, we have calculated the distribution of the flight time of the cumulative Gaussian loss process $Z_t=\mu t + \sigma W_t$, that is $\bar{\tau}\_{\alpha} = \inf \left\lbrace t\in\mathbb{R}_+, Z_t \geq \alpha \right\rbrace$. In the game of Astro though, the loss distribution for scratching a card is far from Gaussian: it is discrete, asymmetrical, with pronounced skewness towards small losses. The figure below shows the difference between the true Astro distribution (in green) and its Gaussian approximation $\mathcal{N}(\mu, \sigma^2)$ (in blue), with $\mu=0.63$ and $\sigma=20.67$.
+In the previous post, we calculated the distribution of the flight time of the cumulative Gaussian loss process $Z_t=\mu t + \sigma W_t$, that is $\bar{\tau}\_{\alpha} = \inf \left\lbrace t\in\mathbb{R}_+, Z_t \geq \alpha \right\rbrace$, and shown that it was equal to the inverse Gaussian distribution $IG\left(\frac{\alpha}{\mu}, \frac{\alpha^2}{\sigma^2}\right)$. In the game of Astro though, the loss distribution for scratching a card is far from Gaussian: it is discrete, asymmetrical, with pronounced skewness towards small losses. The figure below shows the difference between the true Astro distribution (in green) and its Gaussian approximation $\mathcal{N}(\mu, \sigma^2)$ (in blue), with $\mu=0.63$ and $\sigma=20.67$.
 
 {{< figure src="astro_vs_gaussian_distributions.png" >}}
 
 It is insightful to look at the empirical estimation of $\mu$ and $\sigma$ under both the true Astro model and its Gaussian approximation. We define the standard (unbiased) sample estimators
 \begin{align*}
-&\widehat{\mu}_t = \frac{1}{t}\sum_{s=1}^t X_s \\,,\\\\
-&\widehat{\sigma}^2_t = \frac{1}{t-1}\sum_{s=1}^t \left(X_s - \widehat{\mu}_t\right)^2 \\,,
+&\widehat{\mu}_t = \frac{1}{t}\sum_{s=1}^t \xi_s \\,,\\\\
+&\widehat{\sigma}^2_t = \frac{1}{t-1}\sum_{s=1}^t \left(\xi_s - \widehat{\mu}_t\right)^2 \\,,
 \end{align*}
 and report below the median (25th - 75th percentile in shaded area) of 10 independent replications of $\widehat{\mu}_t$ and $\widehat{\sigma}_t$ for $t$ ranging from 2 to 4,500,000, where $X$ is sampled from the Astro distribution (in green) and the Gaussian approximation (in blue).
 
 {{< figure src="mu_sigma_astro_vs_gaussian_distributions.png" >}}
 
-For the mean estimation, as expected, $\widehat{\mu}_t$ converges to the true expected value $\mu=0.63$, with higher dispersion in the Gaussian case. For the variance estimation, $\widehat{\sigma}_t$ seems to converge quite fast to the true value $\sigma=20.67$ in the Gaussian case, but remains much lower in the Astro model until $t\approx 10^5$, before suddenly jumping to values around $\widehat{\sigma}_t\approx 20$. This is actually quite intuitive: the high variance of the Astro distribution is driven by the outlier gains, in particular 1,000 and 25,000, which occur with very small probability. Before $t\approx 10^5$, the samples $X_1, \dots, X_t$ used in $\widehat{\sigma}_t$ do not contain such outliers, thus estimating a seemingly low variance. In other words, the sample variance in the Astro model is subject to higher variability than in the Gaussian case, which hints at larger higher order moments (skewness, kurtosis...) in the Astro case. We confirm this intuition with a direct calculation, based on the formulae:
+For the mean estimation, as expected, $\widehat{\mu}_t$ converges to the true expected value $\mu=0.63$, with higher dispersion in the Gaussian case. For the variance estimation, $\widehat{\sigma}_t$ seems to converge quite fast to the true value $\sigma=20.67$ in the Gaussian case, but remains much lower in the Astro model until $t\approx 10^5$, before suddenly jumping to values around $\widehat{\sigma}_t\approx 20$. This is actually quite intuitive: the high variance of the Astro distribution is driven by the outlier gains, in particular 1,000 and 25,000, which occur with very small probability. Before $t\approx 10^5$, the samples $\xi_1, \dots, \xi_t$ used in $\widehat{\sigma}_t$ do not contain such outliers, thus estimating a seemingly low variance. In other words, the sample variance in the Astro model is subject to higher variability than in the Gaussian case, which hints at larger higher order moments (skewness, kurtosis...) in the Astro case. We confirm this intuition with a direct calculation, based on the formulae:
 
 \begin{align*}
-&skewness = \frac{\mathbb{E}\left[\left(X-\mu\right)^3\right]}{\sigma^{\frac{3}{2}}}\\,,\\\\
-&excess kurtosis = \frac{\mathbb{E}\left[\left(X-\mu\right)^4\right]}{\sigma^{2}} - 3\\,.
+&skewness = \frac{\mathbb{E}\left[\left(\xi-\mu\right)^3\right]}{\sigma^{\frac{3}{2}}}\\,,\\\\
+&excess kurtosis = \frac{\mathbb{E}\left[\left(\xi-\mu\right)^4\right]}{\sigma^{2}} - 3\\,.
 \end{align*}
 
 |          | $\mu$ | $\sigma$ | skewness | excess kurtosis |
@@ -78,7 +78,7 @@ The simulation reveals that the inverse Gaussian approximation underestimates th
 | Astro (simulated) $\tau_{\alpha}$| 3.20 <br />[3.15 ; 3.27] | 60.8 <br />[39.9 ; 78.4] | 1.0 <br />[1.0 ; 1.0] | 1.0 <br />[1.0 ; 1.0] | 1.0 <br />[1.0 ; 1.0] | 2.0 <br />[2.0 ; 2.0] | 11.0 <br />[11.0 ; 11.0] |
 | IG approximation $\bar{\tau}\_{\alpha}$  | 3.17               | 58.46              | 0.00            | 0.01            | 0.02            | 0.09            | 2.14               |
 
-The expectation of $\tau_{\alpha}$ is, perhaps surprisingly, well estimated in the inverse Gaussian model; in fact, it is statistically plausible that $\mathbb{E}\left[\tau_{\alpha}\right] = \mathbb{E}\left[\bar{\tau}\_{\alpha}\right]$ ($3.17 \in [3.15 ; 3.27]$). This is actually somewhat intuitive: remember the expectation of $IG\left(\frac{\alpha}{\mu}, \frac{\alpha^2}{\sigma^2}\right)$ is $\frac{\alpha}{\mu}$, which depends only on the threshold $\alpha$ and the expectation $\mu$ of the Astro random walk, <em>not</em> on higher moments which are crucially underestimated by the Gaussian approximation. On the contrary, quantiles are poorly estimated by the Gaussian model, partly because of the continuous time (quantiles in the discrete time Astro model cannot be less than 1, whereas the inverse Gaussian distribution puts a lot of mass on $[0, 1]$).
+The expectation and variance of $\tau_{\alpha}$ are, perhaps surprisingly, well estimated in the inverse Gaussian model; in fact, it is statistically plausible that $\mathbb{E}\left[\tau_{\alpha}\right] = \mathbb{E}\left[\bar{\tau}\_{\alpha}\right]$ ($3.17 \in [3.15 ; 3.27]$) and $\mathbb{V}\left[\tau_{\alpha}\right] = \mathbb{V}\left[\bar{\tau}\_{\alpha}\right]$ ($58.46\in [39.9 ; 78.4]$). This is actually somewhat intuitive: remember the expectation of $IG\left(\frac{\alpha}{\mu}, \frac{\alpha^2}{\sigma^2}\right)$ is $\frac{\alpha}{\mu}$, which depends only on the threshold $\alpha$ and the expectation $\mu$ of the Astro random walk, <em>not</em> on higher moments which are crucially underestimated by the Gaussian approximation. On the contrary, quantiles are poorly estimated by the Gaussian model, partly because of the continuous time (quantiles in the discrete time Astro model cannot be less than 1, whereas the inverse Gaussian distribution puts a lot of mass on $[0, 1]$).
 
 ## Conclusion
 
