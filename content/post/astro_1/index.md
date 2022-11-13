@@ -146,15 +146,15 @@ $$
 Its mean and variance are given respectively by
 \begin{align*}
 \mathbb{E}\left[\bar{\tau}\_{\alpha}\right]&= \frac{\alpha}{\mu} \approx 3.17\\,,\\\\
-\mathbb{V}\left[\bar{\tau}\_{\alpha}\right]&= \frac{\alpha \sigma^2}{\mu^3} \approx 58.46\\,.
+\mathbb{V}\left[\bar{\tau}\_{\alpha}\right]&= \frac{\alpha \sigma^2}{\mu^3} \approx 58.46^2\\,.
 \end{align*}
 
-We plot below this density for the Astro parameters ($\mu=0.63, \sigma=20.67, \alpha=2$), as well as the mean, the median, and the 5th, 25th, 75th and 95th percentiles. This distribution appears to be significantly right-skewed: even the 95th percentile is below the mean ($2.14$ versus $3.17$). In other words, according to the Gaussian approximation, it is really unlikely (less than 5% chance) that your flight time will be above 2 rounds, even though the mean flight time is above 3!
+We plot below this density for the Astro parameters ($\mu=0.63, \sigma=20.67, \alpha=2$), as well as the mean, standard deviation (SD), and the 5th, 25th, 50th (median), 75th and 95th percentiles. This distribution appears to be significantly right-skewed: even the 95th percentile is below the mean ($2.14$ versus $3.17$). In other words, according to the Gaussian approximation, it is really unlikely (less than 5% chance) that your flight time will be above 2 rounds, even though the mean flight time is above 3!
 
 {{< figure src="ig_distribution.png" >}}
 
 
-|                 | mean | standard deviation | 5th  | 25th | 50th | 75th | 95th |
+|                 | mean | SD | 5th  | 25th | 50th | 75th | 95th |
 |-----------------|-------|----------|------|------|------|------|------|
 | IG approximation | 3.17  | 58.46    | 0.00 | 0.01 | 0.02 | 0.09 | 2.14 |
 

@@ -117,7 +117,7 @@ $$
 $$
 and thus the variance of $\tau\_{\alpha}$ is
 $$
-\mathbb{V}\left[\tau_{\alpha}\right] = \frac{\alpha^+ \sigma^2}{\mu^3}\\,,
+\mathbb{V}\left[\tau_{\alpha}\right] = \frac{\alpha^+ \sigma^2}{\mu^3} \approx 58.46\\,,
 $$
 where $\sigma\approx 20.67$ is the standard deviation of $\xi$. As it turns out, this is also exactly the formula provided by the inverse Gaussian distribution of $\bar{\tau}\_{\alpha}$!
 

@@ -57,10 +57,10 @@ For the mean estimation, as expected, $\widehat{\mu}_t$ converges to the true ex
 
 \begin{align*}
 &skewness = \frac{\mathbb{E}\left[\left(X-\mu\right)^3\right]}{\sigma^{\frac{3}{2}}}\\,,\\\\
-&kurtosis = \frac{\mathbb{E}\left[\left(X-\mu\right)^4\right]}{\sigma^{2}} - 3\\,.
+&excess kurtosis = \frac{\mathbb{E}\left[\left(X-\mu\right)^4\right]}{\sigma^{2}} - 3\\,.
 \end{align*}
 
-|          | $\mu$ | $\sigma$ | skewness | kurtosis |
+|          | $\mu$ | $\sigma$ | skewness | excess kurtosis |
 |----------|-------|----------|----------|----------|
 | Astro    | 0.63  | 20.67    | -1180    | 1426486  |
 | Gaussian | 0.63  | 20.67    | 0        | 0        |
@@ -73,7 +73,7 @@ Contrary to the continuous time Gaussian case $\bar{\tau}\_{\alpha}$, computing 
 
 The simulation reveals that the inverse Gaussian approximation underestimates the probability of small flight times and overestimates that of longer ($>100$) flight times. In other words, the inverse Gaussian approximation does not account properly for the high risk of early crash. We report mean, standard deviation and percentiles of $\tau_{\alpha}$ and $\bar{\tau}\_{\alpha}$, i.e. under both the simulated Astro and the inverse Gaussian models (95% confidence intervals for the simulated statistics are calculated by bootstrap with 400 independent replications).
 
-|                   | $\mu$              | $\sigma$           | 5th             | 25th            | 50th            | 75th            | 95th               |
+|                   | mean              | SD           | 5th             | 25th            | 50th            | 75th            | 95th               |
 |-------------------|--------------------|--------------------|-----------------|-----------------|-----------------|-----------------|--------------------|
 | Astro (simulated) $\tau_{\alpha}$| 3.20 <br />[3.15 ; 3.27] | 60.8 <br />[39.9 ; 78.4] | 1.0 <br />[1.0 ; 1.0] | 1.0 <br />[1.0 ; 1.0] | 1.0 <br />[1.0 ; 1.0] | 2.0 <br />[2.0 ; 2.0] | 11.0 <br />[11.0 ; 11.0] |
 | IG approximation $\bar{\tau}\_{\alpha}$  | 3.17               | 58.46              | 0.00            | 0.01            | 0.02            | 0.09            | 2.14               |
