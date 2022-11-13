@@ -49,7 +49,7 @@ It is insightful to look at the empirical estimation of $\mu$ and $\sigma$ under
 &\widehat{\mu}_t = \frac{1}{t}\sum_{s=1}^t \xi_s \\,,\\\\
 &\widehat{\sigma}^2_t = \frac{1}{t-1}\sum_{s=1}^t \left(\xi_s - \widehat{\mu}_t\right)^2 \\,,
 \end{align*}
-and report below the median (25th - 75th percentile in shaded area) of 10 independent replications of $\widehat{\mu}_t$ and $\widehat{\sigma}_t$ for $t$ ranging from 2 to 4,500,000, where $X$ is sampled from the Astro distribution (in green) and the Gaussian approximation (in blue).
+and report below the median (25th - 75th percentile in shaded area) of 10 independent replications of $\widehat{\mu}_t$ and $\widehat{\sigma}_t$ for $t$ ranging from 2 to 4,500,000, where $\xi$ is sampled from the Astro distribution (in green) and the Gaussian approximation (in blue).
 
 {{< figure src="mu_sigma_astro_vs_gaussian_distributions.png" >}}
 
