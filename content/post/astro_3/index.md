@@ -90,7 +90,11 @@ $$
 $$
 since $\psi(0)=0$.
 
-The term $(\psi^{-1})'(0)$ can be calculated using the inverse function rule, which yields $(\psi^{-1})'(0)=\frac{1}{\psi'(0)}$. The function $\psi$ is also known as the <em>cumulant generating function</em> of $\xi$, and in particular $\psi'(0)=\mu$, which can also be obtained by direct calculations. Going back to the expected flight time, we have
+The term $(\psi^{-1})'(0)$ can be calculated using the inverse function rule, which yields $(\psi^{-1})'(0)=\frac{1}{\psi'(0)}$. A direct calculation shows that
+$$
+\psi'(\lambda) = \Delta + \frac{-\Delta\sum_{k\in\mathbb{N}}(k+1)p_k e^{-(k+1) \Delta \lambda}}{1 - \sum_{k\in\mathbb{N}}(k+1)p_k}\,,
+$$
+and thus $\psi'(0) = \Delta\left(1 - \sum_{k\in\mathbb{N}}(k+1)p_k\right) = \mu$. Going back to the expected flight time, we have
 $$
 \mathbb{E}\left[ \tau_{\alpha} \right] = \frac{\alpha^+}{\mu}\,.
 $$
