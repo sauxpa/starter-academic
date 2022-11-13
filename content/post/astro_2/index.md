@@ -57,7 +57,7 @@ For the mean estimation, as expected, $\widehat{\mu}_t$ converges to the true ex
 
 \begin{align*}
 &skewness = \frac{\mathbb{E}\left[\left(\xi-\mu\right)^3\right]}{\sigma^{\frac{3}{2}}}\\,,\\\\
-&excess kurtosis = \frac{\mathbb{E}\left[\left(\xi-\mu\right)^4\right]}{\sigma^{2}} - 3\\,.
+&excess\ kurtosis = \frac{\mathbb{E}\left[\left(\xi-\mu\right)^4\right]}{\sigma^{2}} - 3\\,.
 \end{align*}
 
 |          | $\mu$ | $\sigma$ | skewness | excess kurtosis |
