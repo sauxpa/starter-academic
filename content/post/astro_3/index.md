@@ -141,7 +141,7 @@ where $\psi^{(3)}(0)=\mathbb{E}\left[\left(\xi-\mu\right)^3\right]$ is the third
 
 We can summarize the Gaussian approximation using the diagram below. Moving from the true Astro step variable $\xi$ to its continuous time Gaussian approximation $dZ$ preserves both mean and variance (as these are the two degrees of freedom of a Gaussian distribution), and this moment matching property is transferred at the level of flight times. However, this commutative diagram does not hold for higher order moments.
 
-{{< figure src="Astro_commutative_diagram.pdf" >}}
+{{< figure src="Astro_commutative_diagram.png" >}}
 
 
 ## License
