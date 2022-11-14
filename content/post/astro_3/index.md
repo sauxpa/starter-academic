@@ -137,6 +137,12 @@ $$
 $$
 where $\psi^{(3)}(0)=\mathbb{E}\left[\left(\xi-\mu\right)^3\right]$ is the third cumulant of $\xi$. In other words, negative skewness in the true Astro distribution translates into <em>higher</em> skewness in the flight time distribution than the inverse Gaussian approximation suggests.
 
+## Conclusion
+
+We can summarize the Gaussian approximation using the diagram below. Moving from the true Astro step variable $\xi$ to its continuous time Gaussian approximation $dZ$ preserves both mean and variance (as these are the two degrees of freedom of a Gaussian distribution), and this moment matching property is transferred at the level of flight times. However, this commutative diagram does not hold for higher order moments.
+
+{{< figure src="Astro_commutative_diagram.pdf" >}}
+
 
 ## License
 
