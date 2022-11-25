@@ -12,7 +12,7 @@ location: Novonordisk, Hillerod
 #  postcode: '94305'
 #  country: United States
 
-summary: 'Weight trajectory after bariatric surgery.'
+summary: 'Weight trajectory after bariatric surgery'
 abstract: "Weight loss after bariatric surgery varies with time, across patients and interventions. Realistic expectations of long term WL are crucial to inform clinical decisions. Our aim is to use artificial intelligence to develop an easy-to-use and interpretable tool providing personalized estimation of 5-year postoperative weight trajectory."
 
 # Talk start and end times.
