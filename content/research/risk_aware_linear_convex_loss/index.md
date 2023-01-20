@@ -1,5 +1,5 @@
 ---
-title: "Risk-aware linear bandits with convex loss"
+title: "Risk-aware linear bandits with convex loss (EWRL 2022, AISTATS 2023)"
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
