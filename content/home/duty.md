@@ -18,19 +18,19 @@ subtitle = ""
   icon = "book-dead"
   icon_pack = "fas"
   name = "Conference Reviewer"
-  description = "AISTATS 2022 (nominated among top reviewers)"  
+  description = "AISTATS 2022 (top reviewer)"
 
 [[feature]]
   icon = "book-dead"
   icon_pack = "fas"
   name = "Workshop Reviewer"
-  description = "EWRL 2022"  
+  description = "EWRL 2022"
 
 [[feature]]
   icon = "book-dead"
   icon_pack = "fas"
   name = "Conference Reviewer"
-  description = "AISTATS 2023"  
+  description = "AISTATS 2023 (top reviewer)"
 
 
 # Uncomment to use emoji icons.
