@@ -3,7 +3,7 @@ title: Machine learning to personalise patient follow-up after obesity surgery (
 subtitle:
 
 # Summary for listings and search engines
-summary:
+summary: Interview (in French) on the Bandits for Health project.
 
 # Link this post with a project
 projects:
