@@ -1,5 +1,5 @@
 ---
-title: Obesity surgery: machine learning to personalise patient follow-up (in French)
+title: Machine learning to personalise patient follow-up after obesity surgery (in French)
 subtitle:
 
 # Summary for listings and search engines
@@ -42,7 +42,7 @@ Interview (in French) on the Bandits for Health project.
 
 Link: https://www.inria.fr/fr/chirurgie-obesite-machine-learning-medecine-personnalisee.
 
-Weight predictor website: https://bariatric-weight-trajectory-prediction.univ-lille.fr/. 
+Weight predictor website: https://bariatric-weight-trajectory-prediction.univ-lille.fr/.
 
 ## License
 
