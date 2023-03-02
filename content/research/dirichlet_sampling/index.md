@@ -73,5 +73,5 @@ slides: ""
 ---
 
 {{% callout note %}}
-State-of-the-art randomized bandit algorithm with guarantees under weak assumptions.
+State-of-the-art randomised bandit algorithm with guarantees under weak assumptions.
 {{% /callout %}}
