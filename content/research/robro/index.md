@@ -1,5 +1,5 @@
 ---
-title: "Impact of Robotic Assistance on Complications in Bariatric Surgery at Expert Laparoscopic Surgery Centers. A Retrospective Comparative Study with Propensity Score (Annals of Surgery)"
+title: "Impact of Robotic Assistance on Complications in Bariatric Surgery at Expert Laparoscopic Surgery Centers. A Retrospective Comparative Study with Propensity Score (TBA)"
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
