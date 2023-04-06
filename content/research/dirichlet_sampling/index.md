@@ -1,5 +1,5 @@
 ---
-title: "From Optimality to Robustness: Dirichlet Sampling Strategies in Stochastic Bandits (NeurIPS 2021)"
+title: "From optimality to robustness: Dirichlet sampling strategies in stochastic bandits (NeurIPS 2021)"
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here

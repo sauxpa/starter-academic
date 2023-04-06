@@ -1,5 +1,5 @@
 ---
-title: "Bregman Deviations of Generic Exponential Families"
+title: "Bregman deviations of generic exponential families"
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
