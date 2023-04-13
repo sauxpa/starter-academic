@@ -43,7 +43,7 @@ featured: true
 url_pdf: 'https://arxiv.org/abs/2209.07154'
 url_code: ''
 url_dataset: ''
-url_poster: 'https://sauxpa.github.io/talks/ewrl_2022/ewrl2022_poster.pdf'
+url_poster: 'https://sauxpa.github.io/talks/aistats_2023/aistats2023_poster.pdf'
 url_project: ''
 url_slides: ''
 url_source: ''
