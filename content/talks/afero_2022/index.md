@@ -12,7 +12,7 @@ address:
   postcode:
   country:
 
-summary: 'Easy-to-use AI calculator predicting 5y weight trajectories after bariatric surgery: a SOPHIA study (with [Pierre Bauvin](https://pierrebauvin.netlify.app/))'
+summary: 'Easy-to-use AI calculator predicting 5y weight trajectories after bariatric surgery: a SOPHIA study (with [Pierre Bauvin](https://pierrebauvin.netlify.app/)).'
 abstract: 'Background: Weight loss trajectories after bariatric surgery vary widely between individuals, while predicting weight loss before the operation remains challenging. We aimed to develop a model using artificial intelligence (AI) to provide individual preoperative prediction of the five-year weight loss trajectories after surgery.
 
 Methods: We enrolled participants from ten prospective cohorts and two randomized trials in Europe, America, and Asia, with five-year follow-up after Roux-en-Y gastric bypass (RYGB), sleeve gastrectomy (SG) or gastric band (GB). The development cohort comprised patients from two centers in France. The primary outcome was body mass index (BMI) at five years. A model was developed using LASSO to select variables and CART to build interpretable regression trees. The performances of the model were assessed through the median absolute deviation (MAD) and root mean squared error (RMSE) of BMI.

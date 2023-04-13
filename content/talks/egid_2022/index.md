@@ -12,7 +12,7 @@ address:
   postcode:
   country:
 
-summary: 'Easy to use and interpretable model based on artificial intelligence for predicting 5-year weight trajectories after bariatric surgery'
+summary: 'Easy to use and interpretable model based on artificial intelligence for predicting 5-year weight trajectories after bariatric surgery.'
 abstract: "Weight oss (WL) after bariatric surgery (BS) varies with time, across patients and interventions. Realistic expectations of long term WL are crucial to inform clinical decisions by patients
 and care providers. Our aim was to use arti�cial intelligence to develop an easy-to-use and
 interpretable tool providing personalized estimation of 5-year postoperative weight trajectory.
