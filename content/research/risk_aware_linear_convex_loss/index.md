@@ -45,9 +45,9 @@ url_code: ''
 url_dataset: ''
 url_poster: 'https://sauxpa.github.io/talks/aistats_2023/aistats2023_poster.pdf'
 url_project: ''
-url_slides: ''
+url_slides: 'https://sauxpa.github.io/talks/aistats_2023/aistats2023_slides.pdf'
 url_source: ''
-url_video: ''
+url_video: 'https://youtu.be/txCq_LKiHrU'
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
