@@ -1,5 +1,5 @@
 ---
-title: "Development and validation of an easy-to-use and interpretable machine learning based calculator predicting five year-weight trajectories after bariatric surgery: a multiple international cohort SOPHIA study"
+title: "Development and validation of an easy-to-use and interpretable machine learning based calculator predicting five year-weight trajectories after bariatric surgery: a multiple international cohort SOPHIA study (Lancet Digital Health)"
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
