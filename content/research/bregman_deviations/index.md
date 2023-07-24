@@ -42,8 +42,8 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'https://arxiv.org/pdf/2201.07306.pdf'
-url_code: ''
+url_pdf: 'https://proceedings.mlr.press/v195/chowdhury23a/chowdhury23a.pdf'
+url_code: 'https://pypi.org/project/concentration-lib/'
 url_dataset: ''
 url_poster: 'https://sauxpa.github.io/research/bregman_deviations/poster.pdf'
 url_project: ''
