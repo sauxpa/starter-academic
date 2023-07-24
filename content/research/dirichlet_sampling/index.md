@@ -42,7 +42,7 @@ featured: true
 #   url: http://example.org
 
 url_pdf: 'https://papers.nips.cc/paper/2021/file/75429d136f65d2d6168b9b6c5f6ec951-Paper.pdf'
-url_code: 'https://github.com/DBaudry/Dirichlet_Sampling_for_Bandits_Neurips21'
+url_code:
 url_dataset: ''
 url_poster: 'https://sauxpa.github.io/research/dirichlet_sampling/poster.pdf'
 url_project: ''
