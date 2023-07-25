@@ -1,5 +1,5 @@
 ---
-title: "Impact of robotic assistance on complications in bariatric surgery at expert laparoscopic surgery centers. A retrospective comparative study with propensity score (TBA)"
+title: "Impact of robotic assistance on complications in bariatric surgery at expert laparoscopic surgery centers. A retrospective comparative study with propensity score (Annals of Surgery)"
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
@@ -45,7 +45,7 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: ''
+url_pdf: 'https://journals.lww.com/annalsofsurgery/Abstract/9900/Impact_of_Robotic_Assistance_on_Complications_in.531.aspx'
 url_code: ''
 url_dataset: ''
 url_poster: ''
