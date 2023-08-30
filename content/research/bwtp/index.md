@@ -1,5 +1,5 @@
 ---
-title: "Development and validation of an easy-to-use and interpretable machine learning based calculator predicting five year-weight trajectories after bariatric surgery: a multiple international cohort SOPHIA study (Lancet Digital Health)"
+title: "Development and validation of an interpretable machine learning-based calculator for predicting 5-year weight trajectories after bariatric surgery: a multinational retrospective cohort SOPHIA study (The Lancet Digital Health)"
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
@@ -10,9 +10,9 @@ authors:
 - Violeta Raverdy
 - Philippe Preux
 - François Pattou
-- et al.
+- and others
 
-date: "2023-07-11T00:00:00Z"
+date: "2023-08-29T00:00:00Z"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
@@ -43,11 +43,11 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: ''
+url_pdf: 'https://www.thelancet.com/action/showPdf?pii=S2589-7500%2823%2900135-8'
 url_code: ''
 url_dataset: ''
-url_poster: ''
-url_project: ''
+url_poster: 'https://sauxpa.github.io/research/bwtp/poster.pdf'
+url_project: 'https://bariatric-weight-trajectory-prediction.univ-lille.fr/'
 url_slides: ''
 url_source: ''
 url_video: ''
