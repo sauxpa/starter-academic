@@ -1,5 +1,5 @@
 ---
-title: '30 August 2022: IFSO Congress on Obesity, Naples, IT'
+title: '30 August 2022: IFSO World Congress on Bariatric and Metabolic Surgery, Naples, IT'
 
 #event: Wowchemy Conference
 #event_url: https://example.org
