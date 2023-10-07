@@ -12,7 +12,7 @@ location: ENS Paris-Saclay
 #  postcode: '94305'
 #  country: United States
 
-summary: 'Bregman Deviations of Generic Exponential Families.'
+summary: 'Bregman deviations of generic exponential families.'
 abstract: "We revisit the method of mixture technique to study the concentration phenomenon in generic exponential families. Combining the properties of the Bregman divergence associated with log-partition function of the family with the method of mixtures for supermartingales, we establish a generic bound between the parameter of the family and a finite sample estimate of the parameter, expressed in the natural Bregman geometry off the family. Our bound is time-uniform (i.e. robust to random sample sizes) and makes appear a quantity extending the classical information gain to exponential families, which we call the Bregman information gain. For the practitioner, we instantiate this novel bound to several classical families, e.g., Gaussian, Bernoulli, Exponential, Weibull, Pareto, Poisson and Chi-square yielding explicit forms of the confidence sets and the Bregman information gain. We further numerically compare the resulting confidence bounds to state-of-the-art alternatives for time-uniform concentration and show that this novel method yields competitive results. Finally, we highlight the benefit of our concentration bounds on some illustrative applications, such as change point detection."
 
 # Talk start and end times.

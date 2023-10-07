@@ -12,16 +12,16 @@ address:
   postcode:
   country:
 
-summary: ''
+summary: 'Development and validation of an interpretable machine learning-based calculator for predicting 5-year weight trajectories after bariatric surgery: a multinational retrospective cohort SOPHIA study.'
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: "2023-10-13 T11:00:00Z"
+date: "2023-10-13T11:00:00Z"
 date_end: ""
 all_day: false
 
 # Schedule page publish date (NOT talk date).
-publishDate: "2023-10-6T17:00:00Z"
+publishDate: "2023-10-06T17:00:00Z"
 
 show_date: true
 
