@@ -1,5 +1,5 @@
 ---
-title: '24 October 2023: Machine Learning and Massive Data Analysis (MLMDA), Saclay, FR'
+title: '24 October 2023: Machine Learning and Massive Data Analysis (MLMDA) seminar, ENS Paris Saclay, FR'
 
 #event: Wowchemy Conference
 #event_url: https://example.org
