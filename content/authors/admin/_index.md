@@ -30,7 +30,7 @@ education:
   courses:
   - course: PhD in Mathematics/Computer Science
     institution: Université de Lille and Inria Scool
-    year: expected 2023
+    year: 2023
   - course: MSc in Machine Learning (MVA)
     institution: École Normale Supérieure Paris-Saclay
     year: 2020
