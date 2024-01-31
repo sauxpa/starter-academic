@@ -1,4 +1,4 @@
-+++
+  +++
 # Experience widget.
 widget = "experience"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
@@ -51,21 +51,21 @@ date_format = "Jan 2006"
   """
 
 [[experience]]
-  title = "Associate Strategist"
+  title = "Associate Quant Trading Strategist"
   company = "Goldman Sachs"
   company_url = ""
   location = "London"
   date_start = "2016-04-11"
   date_end = "2019-09-15"
   description = """
-  Interest rates volatility intern, then credit flow and derivatives.
-  * Modelling credit defaults and rates volatility using tools from stochastic processes and Monte Carlo simulation.
+  Interest rates volatility, flow credit.
+  * Modelling credit defaults and rates volatility using stochastic processes and Monte Carlo simulation.
   * Implementation using Slang and SecDb proprietary tools, monitoring of real-time, distributed systems.
-  * Part of the Illiquids trading desk.
+  * Bond trading strategies (corporate, illiquids, structured notes, callables).
   """
 
 [[experience]]
-  title = "Researcher Intern"
+  title = "Research Intern"
   company = "Oxford-Man Institute of Quantitative Finance"
   company_url = "https://www.oxford-man.ox.ac.uk/"
   location = "Oxford"

@@ -11,7 +11,7 @@ role: PhD Student in Reinforcement Learning
 # Organizations/Affiliations
 organizations:
 - name: Inria Scool
-  url: "https://team.inria.fr/scool/"
+  url: "https://team.inria.fr/scool"
 - name: CRIStAL (CNRS)
   url: "https://www.cristal.univ-lille.fr/?rubrique9"
 
@@ -29,12 +29,12 @@ interests:
 education:
   courses:
   - course: PhD in Mathematics/Computer Science
-    institution: Université de Lille and Inria Scool
-    year: 2023
-  - course: MSc in Machine Learning (MVA)
+    institution: Inria Scool[Inria Scool](https://team.inria.fr/scool).
+    year: 2024
+  - course: MSc in Machine Learning ([MVA](https://www.master-mva.com))
     institution: École Normale Supérieure Paris-Saclay
     year: 2020
-  - course: MSc in Probability and Finance (El Karoui)
+  - course: MSc in Probability and Finance ([El Karoui](https://finance.math.upmc.fr/en))
     institution: École Polytechnique and Sorbonne Université (Paris VI)
     year: 2016
   - course: Bs in Mathematics (M1)
@@ -80,6 +80,6 @@ highlight_name: false
 #- Visitors
 ---
 
-I am a PhD student at Inria Lille (team Scool, formerly SequeL) & CRIStAL (CNRS) under the supervision of [Philippe Preux](https://philippe-preux.github.io/) and [Odalric-Ambrym Maillard](http://odalricambrymmaillard.neowordpress.fr/), funded by the [B4H](https://www.inria.fr/en/philippe-preux-winner-ulne-i-sites-expand-call-projects) project.
+I obtained my PhD in mathematics (theoretical statistics) & computer science (reinforcement learning) at Inria Lille (team Scool, formerly SequeL) & CRIStAL (CNRS) in January 2024, under the supervision of [Philippe Preux](https://philippe-preux.github.io) and [Odalric-Ambrym Maillard](https://odalric-ambrymmaillard.github.io).
 
-My research focuses on reinforcement learning and stochastic bandits in risky, nonparametric environments. I am also working with François Pattou (PU-PH at CHU Lille and Inserm) and his team to design personalised, data-driven follow-up programmes after bariatric surgery for patients with obesity.
+My research focused on reinforcement learning and stochastic bandits in risky, nonparametric environments. I also collaborated with François Pattou (PU-PH at CHU Lille and Inserm) and his team to design personalised, data-driven follow-up programmes after bariatric surgery for patients living with obesity.

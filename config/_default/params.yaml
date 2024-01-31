@@ -20,18 +20,18 @@ twitter: ''
 
 # Contact (edit or remove options as required)
 
-email: firstname[dot]surname[at]inria[dot]fr
+email: firstname[dot]jr[dot]surname[at]gmail[dot]com
 # phone: 888 888 88 88
 address:
-  street: 40 avenue Halley
-  city: Villeneuve d'Ascq
+  street:
+  city:
   # region:
-  postcode: '59650'
-  country: France
-  country_code: FR
+  postcode:
+  country:
+  country_code:
 coordinates:
-  latitude: '50.604912'
-  longitude: '3.148416'
+  latitude: '49.89674633214141'
+  longitude: '2.3041986139540973'
 # directions: Enter Building 1 and take the stairs to Office 200 on Floor 2
 # office_hours:
 #   - 'Monday 10:00 to 13:00'
