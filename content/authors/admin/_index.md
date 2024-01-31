@@ -16,7 +16,7 @@ organizations:
   url: "https://www.cristal.univ-lille.fr/?rubrique9"
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include reinforcement learning, in particular stochastic bandits, and applications to health.
+bio:
 
 interests:
 - Stochastic Processes
@@ -29,12 +29,12 @@ interests:
 education:
   courses:
   - course: PhD in Mathematics/Computer Science
-    institution: Inria Scool[Inria Scool](https://team.inria.fr/scool).
+    institution: Inria Scool.
     year: 2024
-  - course: MSc in Machine Learning ([MVA](https://www.master-mva.com))
+  - course: MSc in Machine Learning (MVA)
     institution: École Normale Supérieure Paris-Saclay
     year: 2020
-  - course: MSc in Probability and Finance ([El Karoui](https://finance.math.upmc.fr/en))
+  - course: MSc in Probability and Finance (El Karoui)
     institution: École Polytechnique and Sorbonne Université (Paris VI)
     year: 2016
   - course: Bs in Mathematics (M1)
