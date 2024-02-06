@@ -6,7 +6,7 @@ title: Patrick Saux
 superuser: true
 
 # Role/position
-role: PhD Student in Reinforcement Learning
+role: PhD in Reinforcement Learning
 
 # Organizations/Affiliations
 organizations:
