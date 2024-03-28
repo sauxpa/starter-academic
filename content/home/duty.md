@@ -32,6 +32,18 @@ subtitle = ""
   name = "Conference Reviewer"
   description = "AISTATS 2023 (top reviewer)"
 
+[[feature]]
+  icon = "book-dead"
+  icon_pack = "fas"
+  name = "Conference Reviewer"
+  description = "ALT 2024"
+
+[[feature]]
+  icon = "book-dead"
+  icon_pack = "fas"
+  name = "Conference Reviewer"
+  description = "AISTATS 2024 (top reviewer)"
+
 
 # Uncomment to use emoji icons.
 # [[feature]]
