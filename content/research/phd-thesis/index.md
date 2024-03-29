@@ -41,7 +41,7 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'PhD_thesis__Patrick_Saux.pdf'
+url_pdf: 'research/phd-thesis/PhD_thesis__Patrick_Saux.pdf'
 url_code: ''
 url_dataset: ''
 url_poster: ''
