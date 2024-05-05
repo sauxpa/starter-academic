@@ -1,6 +1,5 @@
 ---
-title: "Mathematics of statistical sequential decision-making: concentration, risk-awareness and modelling in stochastic bandits, with applications to bariatric surgery
-"
+title: "Mathematics of statistical sequential decision-making: concentration, risk-awareness and modelling in stochastic bandits, with applications to bariatric surgery"
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
