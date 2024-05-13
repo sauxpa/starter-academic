@@ -80,6 +80,6 @@ highlight_name: false
 #- Visitors
 ---
 
-I obtained my PhD in mathematics (theoretical statistics) & computer science (reinforcement learning) at Inria Lille (team Scool, formerly SequeL) & CRIStAL (CNRS) in January 2024, under the supervision of [Philippe Preux](https://philippe-preux.github.io) and [Odalric-Ambrym Maillard](https://odalric-ambrymmaillard.github.io).
+I obtained my PhD in mathematics (theoretical statistics) & computer science (reinforcement learning) at Inria Lille (team Scool, formerly SequeL) & CRIStAL (CNRS) in 2024, under the supervision of [Philippe Preux](https://philippe-preux.github.io) and [Odalric-Ambrym Maillard](https://odalric-ambrymmaillard.github.io).
 
 My research focused on reinforcement learning and stochastic bandits in risky, nonparametric environments. I also collaborated with François Pattou (PU-PH at CHU Lille and Inserm) and his team to design personalised, data-driven follow-up programmes after bariatric surgery for patients living with obesity.
