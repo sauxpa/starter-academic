@@ -1,5 +1,5 @@
 ---
-title: '20 September 2022: Europen Workshop on Reinforcement Learning, Politecnico di Milano, IT'
+title: '20 September 2022: European Workshop on Reinforcement Learning, Politecnico di Milano, IT'
 
 #event: Wowchemy Conference
 #event_url: https://example.org
