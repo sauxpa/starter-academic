@@ -30,8 +30,8 @@ address:
   country:
   country_code:
 coordinates:
-  latitude: '49.89550617715078',
-  longitude: '2.3035759071215414',
+  latitude: '49.89550617715078'
+  longitude: '2.3035759071215414'
 # directions: Enter Building 1 and take the stairs to Office 200 on Floor 2
 # office_hours:
 #   - 'Monday 10:00 to 13:00'
